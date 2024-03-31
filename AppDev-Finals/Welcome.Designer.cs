@@ -32,28 +32,28 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_email = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_password = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_login = new System.Windows.Forms.Button();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_signup = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_login = new System.Windows.Forms.Button();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -72,6 +72,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1920, 1200);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // panel1
             // 
@@ -93,27 +94,6 @@
             this.panel2.Size = new System.Drawing.Size(538, 803);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(538, 108);
-            this.panel3.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(80)))), ((int)(((byte)(91)))));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(511, 91);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Getting Started";
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.flowLayoutPanel3);
@@ -126,98 +106,12 @@
             this.panel4.Size = new System.Drawing.Size(538, 669);
             this.panel4.TabIndex = 1;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.txt_email);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(538, 98);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 33);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Email";
-            // 
-            // txt_email
-            // 
-            this.txt_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_email.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.ForeColor = System.Drawing.Color.Black;
-            this.txt_email.Location = new System.Drawing.Point(3, 36);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(538, 36);
-            this.txt_email.TabIndex = 1;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.label3);
-            this.flowLayoutPanel2.Controls.Add(this.txt_password);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 102);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(538, 108);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 33);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Password";
-            // 
-            // txt_password
-            // 
-            this.txt_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_password.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_password.ForeColor = System.Drawing.Color.Black;
-            this.txt_password.Location = new System.Drawing.Point(3, 36);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '*';
-            this.txt_password.Size = new System.Drawing.Size(538, 36);
-            this.txt_password.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btn_login);
-            this.panel5.Location = new System.Drawing.Point(0, 212);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(538, 110);
-            this.panel5.TabIndex = 3;
-            // 
-            // btn_login
-            // 
-            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.btn_login.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(0, 0);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(538, 65);
-            this.btn_login.TabIndex = 2;
-            this.btn_login.Text = "Log in";
-            this.btn_login.UseVisualStyleBackColor = false;
-            // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel3.Controls.Add(this.label4);
             this.flowLayoutPanel3.Controls.Add(this.btn_signup);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 331);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 351);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(538, 107);
             this.flowLayoutPanel3.TabIndex = 4;
@@ -249,6 +143,118 @@
             this.btn_signup.Text = "Sign up";
             this.btn_signup.UseVisualStyleBackColor = false;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btn_login);
+            this.panel5.Location = new System.Drawing.Point(0, 228);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(538, 94);
+            this.panel5.TabIndex = 3;
+            // 
+            // btn_login
+            // 
+            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.btn_login.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.ForeColor = System.Drawing.Color.White;
+            this.btn_login.Location = new System.Drawing.Point(0, 0);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(538, 65);
+            this.btn_login.TabIndex = 2;
+            this.btn_login.Text = "Log in";
+            this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_login_click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.label3);
+            this.flowLayoutPanel2.Controls.Add(this.txt_password);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 102);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(538, 108);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 33);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Password";
+            // 
+            // txt_password
+            // 
+            this.txt_password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_password.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.ForeColor = System.Drawing.Color.Black;
+            this.txt_password.Location = new System.Drawing.Point(3, 36);
+            this.txt_password.Multiline = true;
+            this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '*';
+            this.txt_password.Size = new System.Drawing.Size(538, 50);
+            this.txt_password.TabIndex = 2;
+            this.txt_password.UseWaitCursor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.label2);
+            this.flowLayoutPanel1.Controls.Add(this.txt_email);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(538, 98);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 33);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Email";
+            // 
+            // txt_email
+            // 
+            this.txt_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.txt_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_email.Font = new System.Drawing.Font("Calibri", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.ForeColor = System.Drawing.Color.Black;
+            this.txt_email.Location = new System.Drawing.Point(3, 36);
+            this.txt_email.Multiline = true;
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(538, 50);
+            this.txt_email.TabIndex = 1;
+            this.txt_email.UseWaitCursor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(538, 108);
+            this.panel3.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(80)))), ((int)(((byte)(91)))));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(511, 91);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Getting Started";
+            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -258,16 +264,16 @@
             this.Size = new System.Drawing.Size(1920, 1200);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }

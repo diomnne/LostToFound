@@ -16,5 +16,18 @@ namespace AppDev_Finals
         {
             InitializeComponent();
         }
+
+        private void btn_login_click(object sender, MouseEventArgs e)
+        {
+            Home h = new Home();
+            Main m = new Main();
+            h.Show();
+            m.Hide();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
