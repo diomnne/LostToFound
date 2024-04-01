@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace AppDev_Finals
 {
-    public partial class Form1 : Form
+    public partial class Home : UserControl
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_header_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
