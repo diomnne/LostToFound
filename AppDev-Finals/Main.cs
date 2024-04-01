@@ -16,6 +16,7 @@ namespace AppDev_Finals
         Home h = new Home();
         public Main()
         {
+            h.Hide();
             w.Show();
 
             InitializeComponent();

@@ -21,5 +21,10 @@ namespace AppDev_Finals
         {
 
         }
+
+        private void pnl_header_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
