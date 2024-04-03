@@ -1,6 +1,6 @@
 ﻿namespace AppDev_Finals
 {
-    partial class Main
+    partial class Intro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.welcome1 = new AppDev_Finals.Welcome();
-            this.home1 = new AppDev_Finals.Home();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Intro));
+            this.welcome1 = new AppDev_Finals.Start();
             this.SuspendLayout();
             // 
             // welcome1
             // 
-            this.welcome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.welcome1.Location = new System.Drawing.Point(0, 0);
+            this.welcome1.Location = new System.Drawing.Point(269, 58);
             this.welcome1.Name = "welcome1";
             this.welcome1.Size = new System.Drawing.Size(1920, 1200);
             this.welcome1.TabIndex = 0;
-            // 
-            // home1
-            // 
-            this.home1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.home1.Location = new System.Drawing.Point(0, 0);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(1920, 1200);
-            this.home1.TabIndex = 1;
             // 
             // Main
             // 
@@ -55,7 +45,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1920, 1200);
-            this.Controls.Add(this.home1);
             this.Controls.Add(this.welcome1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -69,8 +58,7 @@
 
         #endregion
 
-        private Welcome welcome1;
-        private Home home1;
+        private Start welcome1;
     }
 }
 

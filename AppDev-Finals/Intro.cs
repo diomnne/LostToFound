@@ -10,14 +10,12 @@ using System.Windows.Forms;
 
 namespace AppDev_Finals
 {
-    public partial class Main : Form
+    public partial class Intro : Form
     {
-        Welcome w = new Welcome();
-        Home h = new Home();
-        public Main()
+   
+        public Intro()
         {
-            h.Hide();
-            w.Show();
+          
 
             InitializeComponent();
         }
