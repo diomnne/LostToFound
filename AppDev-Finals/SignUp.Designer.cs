@@ -36,13 +36,21 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_password = new Guna.UI.WinForms.GunaTextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.btn_signup = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_email = new Guna.UI.WinForms.GunaTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_confirmPass = new Guna.UI.WinForms.GunaTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_username = new Guna.UI.WinForms.GunaTextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -100,14 +108,22 @@
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.Controls.Add(this.label2);
+            this.flowLayoutPanel2.Controls.Add(this.txt_email);
+            this.flowLayoutPanel2.Controls.Add(this.panel7);
             this.flowLayoutPanel2.Controls.Add(this.label3);
             this.flowLayoutPanel2.Controls.Add(this.txt_password);
             this.flowLayoutPanel2.Controls.Add(this.panel6);
+            this.flowLayoutPanel2.Controls.Add(this.label4);
+            this.flowLayoutPanel2.Controls.Add(this.txt_confirmPass);
+            this.flowLayoutPanel2.Controls.Add(this.panel5);
             this.flowLayoutPanel2.Controls.Add(this.btn_signup);
+            this.flowLayoutPanel2.Controls.Add(this.panel8);
+            this.flowLayoutPanel2.Controls.Add(this.gunaButton1);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 125);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(538, 463);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(538, 541);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // label3
@@ -115,7 +131,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(3, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 33);
             this.label3.TabIndex = 2;
@@ -131,19 +147,12 @@
             this.txt_password.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
             this.txt_password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_password.Location = new System.Drawing.Point(3, 36);
+            this.txt_password.Location = new System.Drawing.Point(3, 156);
             this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '*';
+            this.txt_password.PasswordChar = '•';
             this.txt_password.Radius = 5;
             this.txt_password.Size = new System.Drawing.Size(534, 65);
             this.txt_password.TabIndex = 6;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(3, 107);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(538, 41);
-            this.panel6.TabIndex = 10;
             // 
             // btn_signup
             // 
@@ -156,7 +165,7 @@
             this.btn_signup.ForeColor = System.Drawing.Color.White;
             this.btn_signup.Image = null;
             this.btn_signup.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_signup.Location = new System.Drawing.Point(3, 154);
+            this.btn_signup.Location = new System.Drawing.Point(3, 377);
             this.btn_signup.Name = "btn_signup";
             this.btn_signup.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(147)))));
             this.btn_signup.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -172,8 +181,8 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.txt_email);
+            this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.flowLayoutPanel1.Controls.Add(this.txt_username);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -230,6 +239,115 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign up";
             // 
+            // txt_confirmPass
+            // 
+            this.txt_confirmPass.BaseColor = System.Drawing.Color.White;
+            this.txt_confirmPass.BorderColor = System.Drawing.Color.Silver;
+            this.txt_confirmPass.BorderSize = 1;
+            this.txt_confirmPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_confirmPass.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_confirmPass.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_confirmPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_confirmPass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_confirmPass.Location = new System.Drawing.Point(3, 276);
+            this.txt_confirmPass.Name = "txt_confirmPass";
+            this.txt_confirmPass.PasswordChar = '•';
+            this.txt_confirmPass.Radius = 5;
+            this.txt_confirmPass.Size = new System.Drawing.Size(534, 65);
+            this.txt_confirmPass.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(3, 240);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(218, 33);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Confirm Password";
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(3, 347);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(534, 24);
+            this.panel5.TabIndex = 15;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(3, 227);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(534, 10);
+            this.panel6.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 33);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Username";
+            // 
+            // txt_username
+            // 
+            this.txt_username.BaseColor = System.Drawing.Color.White;
+            this.txt_username.BorderColor = System.Drawing.Color.Silver;
+            this.txt_username.BorderSize = 1;
+            this.txt_username.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_username.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_username.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_username.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_username.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_username.Location = new System.Drawing.Point(3, 36);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.PasswordChar = '\0';
+            this.txt_username.Radius = 5;
+            this.txt_username.Size = new System.Drawing.Size(534, 65);
+            this.txt_username.TabIndex = 6;
+            // 
+            // panel7
+            // 
+            this.panel7.Location = new System.Drawing.Point(3, 107);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(534, 10);
+            this.panel7.TabIndex = 17;
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.White;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
+            this.gunaButton1.BorderSize = 1;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
+            this.gunaButton1.Image = null;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(3, 464);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(147)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Radius = 5;
+            this.gunaButton1.Size = new System.Drawing.Size(534, 65);
+            this.gunaButton1.TabIndex = 18;
+            this.gunaButton1.Text = "Clear";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(3, 448);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(534, 10);
+            this.panel8.TabIndex = 17;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -262,12 +380,20 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaTextBox txt_password;
-        private System.Windows.Forms.Panel panel6;
         private Guna.UI.WinForms.GunaButton btn_signup;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaTextBox txt_email;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI.WinForms.GunaTextBox txt_confirmPass;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI.WinForms.GunaTextBox txt_username;
+        private System.Windows.Forms.Panel panel7;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private System.Windows.Forms.Panel panel8;
     }
 }

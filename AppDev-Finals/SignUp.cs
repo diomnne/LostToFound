@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AppDev_Finals
 {
@@ -22,9 +23,9 @@ namespace AppDev_Finals
         private void btn_signup_Click(object sender, EventArgs e)
         {
             
-
+            string username = txt_username.Text;
             string email = txt_email.Text;
-            string pass = txt_password.Text;
+            string password = txt_password.Text;
 
             txt_email.Text = "";
             txt_password.Text = "";
@@ -32,12 +33,12 @@ namespace AppDev_Finals
             MySqlConnection conConn = new MySqlConnection(con);
             conConn.Open();
 
-            string insertSql = "INSERT INTO lost_and_found.user  (email, password) VALUES (?, ?)";
+            string insertSql = "INSERT INTO lost_and_found.user  (username, email, password) VALUES (?, ?, ?)";
             MySqlCommand insertCmd = new MySqlCommand(insertSql, conConn);
 
-
+            insertCmd.Parameters.AddWithValue("@username", username);
             insertCmd.Parameters.AddWithValue("@email", email);
-            insertCmd.Parameters.AddWithValue("@password", pass);
+            insertCmd.Parameters.AddWithValue("@password", password);
 
             insertCmd.ExecuteNonQuery();
 
@@ -47,5 +48,6 @@ namespace AppDev_Finals
             h.Show();
             this.Hide();
         }
+        
     }
 }

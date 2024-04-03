@@ -34,33 +34,37 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox2 = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_lost = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_found = new Guna.UI.WinForms.GunaCheckBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaCheckBox3 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox4 = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_personal = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_valuables = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_course = new Guna.UI.WinForms.GunaCheckBox();
+            this.flow1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cbox_misc = new Guna.UI.WinForms.GunaCheckBox();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_home = new Guna.UI.WinForms.GunaButton();
             this.btn_report = new Guna.UI.WinForms.GunaButton();
-            this.flow1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gunaCheckBox5 = new Guna.UI.WinForms.GunaCheckBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Lost2Found = new Guna.UI.WinForms.GunaButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_myReports = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.gunaCheckBox6 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox7 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox8 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox9 = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_month = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_week = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_today = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_all = new Guna.UI.WinForms.GunaCheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -68,23 +72,27 @@
             this.flowLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
             this.pnl_header.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.73438F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.26563F));
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_header, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pnl_header, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.flow1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel7, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -100,20 +108,21 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 124);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(448, 1473);
+            this.panel1.Size = new System.Drawing.Size(506, 1473);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel2.Controls.Add(this.gunaButton1);
             this.flowLayoutPanel2.Controls.Add(this.tableLayoutPanel2);
             this.flowLayoutPanel2.Controls.Add(this.tableLayoutPanel3);
             this.flowLayoutPanel2.Controls.Add(this.tableLayoutPanel4);
+            this.flowLayoutPanel2.Controls.Add(this.tableLayoutPanel5);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(448, 1473);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(506, 1473);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // gunaButton1
@@ -153,43 +162,54 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(445, 232);
             this.tableLayoutPanel2.TabIndex = 6;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
+            this.label1.Location = new System.Drawing.Point(41, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 45);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Category";
+            // 
             // flowLayoutPanel4
             // 
-            this.flowLayoutPanel4.Controls.Add(this.gunaCheckBox1);
-            this.flowLayoutPanel4.Controls.Add(this.gunaCheckBox2);
+            this.flowLayoutPanel4.Controls.Add(this.cbox_lost);
+            this.flowLayoutPanel4.Controls.Add(this.cbox_found);
             this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(41, 57);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(401, 171);
             this.flowLayoutPanel4.TabIndex = 5;
             // 
-            // gunaCheckBox1
+            // cbox_lost
             // 
-            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox1.Location = new System.Drawing.Point(3, 3);
-            this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(79, 37);
-            this.gunaCheckBox1.TabIndex = 1;
-            this.gunaCheckBox1.Text = "Lost";
+            this.cbox_lost.BaseColor = System.Drawing.Color.White;
+            this.cbox_lost.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_lost.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_lost.FillColor = System.Drawing.Color.White;
+            this.cbox_lost.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_lost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_lost.Location = new System.Drawing.Point(3, 3);
+            this.cbox_lost.Name = "cbox_lost";
+            this.cbox_lost.Size = new System.Drawing.Size(90, 44);
+            this.cbox_lost.TabIndex = 1;
+            this.cbox_lost.Text = "Lost";
             // 
-            // gunaCheckBox2
+            // cbox_found
             // 
-            this.gunaCheckBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox2.Location = new System.Drawing.Point(3, 46);
-            this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(103, 37);
-            this.gunaCheckBox2.TabIndex = 2;
-            this.gunaCheckBox2.Text = "Found";
+            this.cbox_found.BaseColor = System.Drawing.Color.White;
+            this.cbox_found.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_found.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_found.FillColor = System.Drawing.Color.White;
+            this.cbox_found.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_found.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_found.Location = new System.Drawing.Point(3, 53);
+            this.cbox_found.Name = "cbox_found";
+            this.cbox_found.Size = new System.Drawing.Size(119, 44);
+            this.cbox_found.TabIndex = 2;
+            this.cbox_found.Text = "Found";
             // 
             // tableLayoutPanel3
             // 
@@ -201,9 +221,9 @@
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 371);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.71772F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.28228F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(445, 285);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.36905F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.63095F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(445, 336);
             this.tableLayoutPanel3.TabIndex = 7;
             // 
             // label2
@@ -219,113 +239,111 @@
             // 
             // flowLayoutPanel5
             // 
-            this.flowLayoutPanel5.Controls.Add(this.gunaCheckBox3);
-            this.flowLayoutPanel5.Controls.Add(this.gunaCheckBox4);
-            this.flowLayoutPanel5.Controls.Add(this.gunaCheckBox5);
+            this.flowLayoutPanel5.Controls.Add(this.cbox_personal);
+            this.flowLayoutPanel5.Controls.Add(this.cbox_valuables);
+            this.flowLayoutPanel5.Controls.Add(this.cbox_course);
+            this.flowLayoutPanel5.Controls.Add(this.cbox_misc);
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(41, 53);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(41, 58);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(401, 229);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(401, 275);
             this.flowLayoutPanel5.TabIndex = 5;
             // 
-            // gunaCheckBox3
+            // cbox_personal
             // 
-            this.gunaCheckBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox3.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox3.Location = new System.Drawing.Point(3, 3);
-            this.gunaCheckBox3.Name = "gunaCheckBox3";
-            this.gunaCheckBox3.Size = new System.Drawing.Size(158, 44);
-            this.gunaCheckBox3.TabIndex = 1;
-            this.gunaCheckBox3.Text = "Common";
+            this.cbox_personal.BaseColor = System.Drawing.Color.White;
+            this.cbox_personal.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_personal.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_personal.FillColor = System.Drawing.Color.White;
+            this.cbox_personal.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_personal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_personal.Location = new System.Drawing.Point(3, 3);
+            this.cbox_personal.Name = "cbox_personal";
+            this.cbox_personal.Size = new System.Drawing.Size(302, 44);
+            this.cbox_personal.TabIndex = 1;
+            this.cbox_personal.Text = "Personal Belongings";
             // 
-            // gunaCheckBox4
+            // cbox_valuables
             // 
-            this.gunaCheckBox4.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox4.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox4.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox4.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox4.Location = new System.Drawing.Point(3, 53);
-            this.gunaCheckBox4.Name = "gunaCheckBox4";
-            this.gunaCheckBox4.Size = new System.Drawing.Size(162, 44);
-            this.gunaCheckBox4.TabIndex = 2;
-            this.gunaCheckBox4.Text = "Valuables";
+            this.cbox_valuables.BaseColor = System.Drawing.Color.White;
+            this.cbox_valuables.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_valuables.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_valuables.FillColor = System.Drawing.Color.White;
+            this.cbox_valuables.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_valuables.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_valuables.Location = new System.Drawing.Point(3, 53);
+            this.cbox_valuables.Name = "cbox_valuables";
+            this.cbox_valuables.Size = new System.Drawing.Size(162, 44);
+            this.cbox_valuables.TabIndex = 2;
+            this.cbox_valuables.Text = "Valuables";
+            // 
+            // cbox_course
+            // 
+            this.cbox_course.BaseColor = System.Drawing.Color.White;
+            this.cbox_course.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_course.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_course.FillColor = System.Drawing.Color.White;
+            this.cbox_course.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_course.Location = new System.Drawing.Point(3, 103);
+            this.cbox_course.Name = "cbox_course";
+            this.cbox_course.Size = new System.Drawing.Size(231, 44);
+            this.cbox_course.TabIndex = 3;
+            this.cbox_course.Text = "Course-related";
+            // 
+            // flow1
+            // 
+            this.flow1.AutoScroll = true;
+            this.flow1.AutoSize = true;
+            this.flow1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.flow1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flow1.Location = new System.Drawing.Point(515, 124);
+            this.flow1.Name = "flow1";
+            this.flow1.Size = new System.Drawing.Size(1530, 1473);
+            this.flow1.TabIndex = 3;
+            // 
+            // cbox_misc
+            // 
+            this.cbox_misc.BaseColor = System.Drawing.Color.White;
+            this.cbox_misc.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_misc.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_misc.FillColor = System.Drawing.Color.White;
+            this.cbox_misc.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_misc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_misc.Location = new System.Drawing.Point(3, 153);
+            this.cbox_misc.Name = "cbox_misc";
+            this.cbox_misc.Size = new System.Drawing.Size(221, 44);
+            this.cbox_misc.TabIndex = 4;
+            this.cbox_misc.Text = "Miscellaneous";
+            // 
+            // flowLayoutPanel7
+            // 
+            this.flowLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.flowLayoutPanel7.Controls.Add(this.Lost2Found);
+            this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(506, 115);
+            this.flowLayoutPanel7.TabIndex = 4;
             // 
             // pnl_header
             // 
             this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.pnl_header, 2);
-            this.pnl_header.Controls.Add(this.flowLayoutPanel1);
             this.pnl_header.Controls.Add(this.flowLayoutPanel3);
-            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_header.Location = new System.Drawing.Point(3, 3);
+            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_header.Location = new System.Drawing.Point(515, 3);
             this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(2554, 115);
-            this.pnl_header.TabIndex = 2;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(2163, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(391, 110);
-            this.flowLayoutPanel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.gunaImageButton1);
-            this.panel2.Location = new System.Drawing.Point(278, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(110, 107);
-            this.panel2.TabIndex = 0;
-            // 
-            // gunaImageButton1
-            // 
-            this.gunaImageButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaImageButton1.Image")));
-            this.gunaImageButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaImageButton1.Location = new System.Drawing.Point(0, 0);
-            this.gunaImageButton1.Name = "gunaImageButton1";
-            this.gunaImageButton1.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("gunaImageButton1.OnHoverImage")));
-            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton1.Size = new System.Drawing.Size(110, 107);
-            this.gunaImageButton1.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.gunaImageButton2);
-            this.panel4.Location = new System.Drawing.Point(162, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(110, 107);
-            this.panel4.TabIndex = 1;
-            // 
-            // gunaImageButton2
-            // 
-            this.gunaImageButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaImageButton2.Image")));
-            this.gunaImageButton2.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaImageButton2.Location = new System.Drawing.Point(0, 0);
-            this.gunaImageButton2.Name = "gunaImageButton2";
-            this.gunaImageButton2.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("gunaImageButton2.OnHoverImage")));
-            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton2.Size = new System.Drawing.Size(110, 107);
-            this.gunaImageButton2.TabIndex = 0;
+            this.pnl_header.Size = new System.Drawing.Size(1530, 115);
+            this.pnl_header.TabIndex = 5;
             // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.Controls.Add(this.btn_home);
             this.flowLayoutPanel3.Controls.Add(this.btn_report);
+            this.flowLayoutPanel3.Controls.Add(this.btn_myReports);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1099, 110);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1338, 110);
             this.flowLayoutPanel3.TabIndex = 2;
             // 
             // btn_home
@@ -351,7 +369,6 @@
             this.btn_home.TabIndex = 0;
             this.btn_home.Text = "Home";
             this.btn_home.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_home.Click += new System.EventHandler(this.btn_home_Click_1);
             // 
             // btn_report
             // 
@@ -376,55 +393,149 @@
             this.btn_report.Text = "Report Lost and Found";
             this.btn_report.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // flow1
+            // Lost2Found
             // 
-            this.flow1.AutoScroll = true;
-            this.flow1.AutoSize = true;
-            this.flow1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flow1.Location = new System.Drawing.Point(457, 124);
-            this.flow1.Name = "flow1";
-            this.flow1.Size = new System.Drawing.Size(2100, 1473);
-            this.flow1.TabIndex = 3;
+            this.Lost2Found.AnimationHoverSpeed = 0.07F;
+            this.Lost2Found.AnimationSpeed = 0.03F;
+            this.Lost2Found.BaseColor = System.Drawing.Color.Transparent;
+            this.Lost2Found.BorderColor = System.Drawing.Color.Black;
+            this.Lost2Found.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Lost2Found.Font = new System.Drawing.Font("Impact", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lost2Found.ForeColor = System.Drawing.Color.White;
+            this.Lost2Found.Image = ((System.Drawing.Image)(resources.GetObject("Lost2Found.Image")));
+            this.Lost2Found.ImageSize = new System.Drawing.Size(30, 30);
+            this.Lost2Found.Location = new System.Drawing.Point(3, 3);
+            this.Lost2Found.Name = "Lost2Found";
+            this.Lost2Found.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Lost2Found.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.Lost2Found.OnHoverForeColor = System.Drawing.Color.White;
+            this.Lost2Found.OnHoverImage = null;
+            this.Lost2Found.OnPressedColor = System.Drawing.Color.Transparent;
+            this.Lost2Found.Size = new System.Drawing.Size(390, 107);
+            this.Lost2Found.TabIndex = 0;
+            this.Lost2Found.Text = "Lost2Found";
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
-            this.label1.Location = new System.Drawing.Point(41, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Category";
+            this.panel2.Controls.Add(this.gunaImageButton1);
+            this.panel2.Location = new System.Drawing.Point(393, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(110, 107);
+            this.panel2.TabIndex = 0;
             // 
-            // gunaCheckBox5
+            // gunaImageButton1
             // 
-            this.gunaCheckBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox5.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox5.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox5.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox5.Location = new System.Drawing.Point(3, 103);
-            this.gunaCheckBox5.Name = "gunaCheckBox5";
-            this.gunaCheckBox5.Size = new System.Drawing.Size(231, 44);
-            this.gunaCheckBox5.TabIndex = 3;
-            this.gunaCheckBox5.Text = "Course-related";
+            this.gunaImageButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaImageButton1.Image")));
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaImageButton1.Location = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("gunaImageButton1.OnHoverImage")));
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(110, 107);
+            this.gunaImageButton1.TabIndex = 0;
             // 
-            // tableLayoutPanel4
+            // flowLayoutPanel1
             // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539326F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46067F));
-            this.tableLayoutPanel4.Controls.Add(this.label3, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel6, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 662);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.71772F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.28228F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(445, 333);
-            this.tableLayoutPanel4.TabIndex = 8;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(2051, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(506, 115);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // btn_myReports
+            // 
+            this.btn_myReports.AnimationHoverSpeed = 0.07F;
+            this.btn_myReports.AnimationSpeed = 0.03F;
+            this.btn_myReports.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_myReports.BorderColor = System.Drawing.Color.Black;
+            this.btn_myReports.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_myReports.ForeColor = System.Drawing.Color.White;
+            this.btn_myReports.Image = ((System.Drawing.Image)(resources.GetObject("btn_myReports.Image")));
+            this.btn_myReports.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_myReports.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_myReports.Location = new System.Drawing.Point(705, 3);
+            this.btn_myReports.Name = "btn_myReports";
+            this.btn_myReports.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
+            this.btn_myReports.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_myReports.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_myReports.OnHoverImage = null;
+            this.btn_myReports.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_myReports.Size = new System.Drawing.Size(299, 101);
+            this.btn_myReports.TabIndex = 2;
+            this.btn_myReports.Text = "My Reports";
+            this.btn_myReports.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Controls.Add(this.cbox_all);
+            this.flowLayoutPanel6.Controls.Add(this.cbox_today);
+            this.flowLayoutPanel6.Controls.Add(this.cbox_week);
+            this.flowLayoutPanel6.Controls.Add(this.cbox_month);
+            this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(41, 57);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(401, 252);
+            this.flowLayoutPanel6.TabIndex = 5;
+            // 
+            // cbox_month
+            // 
+            this.cbox_month.BaseColor = System.Drawing.Color.White;
+            this.cbox_month.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_month.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_month.FillColor = System.Drawing.Color.White;
+            this.cbox_month.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_month.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_month.Location = new System.Drawing.Point(3, 153);
+            this.cbox_month.Name = "cbox_month";
+            this.cbox_month.Size = new System.Drawing.Size(183, 44);
+            this.cbox_month.TabIndex = 4;
+            this.cbox_month.Text = "This month";
+            // 
+            // cbox_week
+            // 
+            this.cbox_week.BaseColor = System.Drawing.Color.White;
+            this.cbox_week.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_week.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_week.FillColor = System.Drawing.Color.White;
+            this.cbox_week.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_week.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_week.Location = new System.Drawing.Point(3, 103);
+            this.cbox_week.Name = "cbox_week";
+            this.cbox_week.Size = new System.Drawing.Size(164, 44);
+            this.cbox_week.TabIndex = 3;
+            this.cbox_week.Text = "This week";
+            // 
+            // cbox_today
+            // 
+            this.cbox_today.BaseColor = System.Drawing.Color.White;
+            this.cbox_today.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_today.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_today.FillColor = System.Drawing.Color.White;
+            this.cbox_today.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_today.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_today.Location = new System.Drawing.Point(3, 53);
+            this.cbox_today.Name = "cbox_today";
+            this.cbox_today.Size = new System.Drawing.Size(116, 44);
+            this.cbox_today.TabIndex = 2;
+            this.cbox_today.Text = "Today";
+            // 
+            // cbox_all
+            // 
+            this.cbox_all.BaseColor = System.Drawing.Color.White;
+            this.cbox_all.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_all.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_all.FillColor = System.Drawing.Color.White;
+            this.cbox_all.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_all.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_all.Location = new System.Drawing.Point(3, 3);
+            this.cbox_all.Name = "cbox_all";
+            this.cbox_all.Size = new System.Drawing.Size(69, 44);
+            this.cbox_all.TabIndex = 1;
+            this.cbox_all.Text = "All";
             // 
             // label3
             // 
@@ -437,73 +548,57 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Date posted";
             // 
-            // flowLayoutPanel6
+            // tableLayoutPanel4
             // 
-            this.flowLayoutPanel6.Controls.Add(this.gunaCheckBox6);
-            this.flowLayoutPanel6.Controls.Add(this.gunaCheckBox7);
-            this.flowLayoutPanel6.Controls.Add(this.gunaCheckBox8);
-            this.flowLayoutPanel6.Controls.Add(this.gunaCheckBox9);
-            this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(41, 62);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(401, 252);
-            this.flowLayoutPanel6.TabIndex = 5;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539326F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46067F));
+            this.tableLayoutPanel4.Controls.Add(this.label3, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel6, 1, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 713);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51652F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.48348F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(445, 333);
+            this.tableLayoutPanel4.TabIndex = 8;
             // 
-            // gunaCheckBox6
+            // tableLayoutPanel5
             // 
-            this.gunaCheckBox6.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox6.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox6.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox6.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox6.Location = new System.Drawing.Point(3, 3);
-            this.gunaCheckBox6.Name = "gunaCheckBox6";
-            this.gunaCheckBox6.Size = new System.Drawing.Size(69, 44);
-            this.gunaCheckBox6.TabIndex = 1;
-            this.gunaCheckBox6.Text = "All";
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539326F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46067F));
+            this.tableLayoutPanel5.Controls.Add(this.gunaButton2, 1, 1);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 1052);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.303303F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.69669F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(445, 119);
+            this.tableLayoutPanel5.TabIndex = 9;
             // 
-            // gunaCheckBox7
+            // gunaButton2
             // 
-            this.gunaCheckBox7.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox7.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox7.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox7.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox7.Location = new System.Drawing.Point(3, 53);
-            this.gunaCheckBox7.Name = "gunaCheckBox7";
-            this.gunaCheckBox7.Size = new System.Drawing.Size(116, 44);
-            this.gunaCheckBox7.TabIndex = 2;
-            this.gunaCheckBox7.Text = "Today";
-            // 
-            // gunaCheckBox8
-            // 
-            this.gunaCheckBox8.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox8.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox8.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox8.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox8.Location = new System.Drawing.Point(3, 103);
-            this.gunaCheckBox8.Name = "gunaCheckBox8";
-            this.gunaCheckBox8.Size = new System.Drawing.Size(164, 44);
-            this.gunaCheckBox8.TabIndex = 3;
-            this.gunaCheckBox8.Text = "This week";
-            // 
-            // gunaCheckBox9
-            // 
-            this.gunaCheckBox9.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox9.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox9.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox9.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox9.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCheckBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaCheckBox9.Location = new System.Drawing.Point(3, 153);
-            this.gunaCheckBox9.Name = "gunaCheckBox9";
-            this.gunaCheckBox9.Size = new System.Drawing.Size(183, 44);
-            this.gunaCheckBox9.TabIndex = 4;
-            this.gunaCheckBox9.Text = "This month";
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaButton2.Image = null;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(41, 6);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(147)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Radius = 5;
+            this.gunaButton2.Size = new System.Drawing.Size(401, 60);
+            this.gunaButton2.TabIndex = 0;
+            this.gunaButton2.Text = "Apply Filters";
+            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Home
             // 
@@ -529,15 +624,16 @@
             this.tableLayoutPanel3.PerformLayout();
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel5.PerformLayout();
+            this.flowLayoutPanel7.ResumeLayout(false);
             this.pnl_header.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -546,35 +642,39 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flow1;
-        private System.Windows.Forms.Panel pnl_header;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
-        private System.Windows.Forms.Panel panel4;
-        private Guna.UI.WinForms.GunaImageButton gunaImageButton2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private Guna.UI.WinForms.GunaButton btn_home;
-        private Guna.UI.WinForms.GunaButton btn_report;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox2;
+        private Guna.UI.WinForms.GunaCheckBox cbox_lost;
+        private Guna.UI.WinForms.GunaCheckBox cbox_found;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox3;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox4;
+        private Guna.UI.WinForms.GunaCheckBox cbox_personal;
+        private Guna.UI.WinForms.GunaCheckBox cbox_valuables;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox5;
+        private Guna.UI.WinForms.GunaCheckBox cbox_course;
+        private Guna.UI.WinForms.GunaCheckBox cbox_misc;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.Panel pnl_header;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private Guna.UI.WinForms.GunaButton btn_home;
+        private Guna.UI.WinForms.GunaButton btn_report;
+        private Guna.UI.WinForms.GunaButton Lost2Found;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
+        private Guna.UI.WinForms.GunaButton btn_myReports;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox6;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox7;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox8;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox9;
+        private Guna.UI.WinForms.GunaCheckBox cbox_all;
+        private Guna.UI.WinForms.GunaCheckBox cbox_today;
+        private Guna.UI.WinForms.GunaCheckBox cbox_week;
+        private Guna.UI.WinForms.GunaCheckBox cbox_month;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private Guna.UI.WinForms.GunaButton gunaButton2;
     }
 }
