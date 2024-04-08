@@ -75,5 +75,16 @@ namespace AppDev_Finals
         {
 
         }
+
+        private void btn_report_Click(object sender, EventArgs e)
+        {
+            Report r = new Report();
+            r.Show();
+        }
+
+        private void flow1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

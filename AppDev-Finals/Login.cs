@@ -11,16 +11,16 @@ using System.Windows.Forms;
 
 namespace AppDev_Finals
 {
-    public partial class Start : Form
+    public partial class Login : Form
     {
-        public Start()
+        public Login()
         {
             InitializeComponent();
         }
 
         private void btn_signup_Click(object sender, EventArgs e)
         {
-            SignUp s = new SignUp();
+            Signup s = new Signup();
             s.Show();
             this.Hide();
         }
@@ -52,7 +52,7 @@ namespace AppDev_Finals
             }
             else
             {
-                MessageBox.Show("Invalid username or password");
+                MessageBox.Show("Invalid email or password");
             }
 
             reader.Close();

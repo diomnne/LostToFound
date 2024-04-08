@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnl_header = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_home = new Guna.UI.WinForms.GunaButton();
+            this.btn_report = new Guna.UI.WinForms.GunaButton();
+            this.btn_myReports = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
@@ -44,42 +49,38 @@
             this.cbox_personal = new Guna.UI.WinForms.GunaCheckBox();
             this.cbox_valuables = new Guna.UI.WinForms.GunaCheckBox();
             this.cbox_course = new Guna.UI.WinForms.GunaCheckBox();
-            this.flow1 = new System.Windows.Forms.FlowLayoutPanel();
             this.cbox_misc = new Guna.UI.WinForms.GunaCheckBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.cbox_all = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_today = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_week = new Guna.UI.WinForms.GunaCheckBox();
+            this.cbox_month = new Guna.UI.WinForms.GunaCheckBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.flow1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnl_header = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_home = new Guna.UI.WinForms.GunaButton();
-            this.btn_report = new Guna.UI.WinForms.GunaButton();
             this.Lost2Found = new Guna.UI.WinForms.GunaButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_myReports = new Guna.UI.WinForms.GunaButton();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cbox_month = new Guna.UI.WinForms.GunaCheckBox();
-            this.cbox_week = new Guna.UI.WinForms.GunaCheckBox();
-            this.cbox_today = new Guna.UI.WinForms.GunaCheckBox();
-            this.cbox_all = new Guna.UI.WinForms.GunaCheckBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
             this.tableLayoutPanel1.SuspendLayout();
+            this.pnl_header.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
-            this.pnl_header.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel6.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -95,12 +96,104 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel7, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.5625F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.4375F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(2560, 1600);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // pnl_header
+            // 
+            this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.pnl_header.Controls.Add(this.flowLayoutPanel3);
+            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_header.Location = new System.Drawing.Point(515, 3);
+            this.pnl_header.Name = "pnl_header";
+            this.pnl_header.Size = new System.Drawing.Size(1530, 115);
+            this.pnl_header.TabIndex = 5;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.btn_home);
+            this.flowLayoutPanel3.Controls.Add(this.btn_report);
+            this.flowLayoutPanel3.Controls.Add(this.btn_myReports);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 0);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1338, 110);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // btn_home
+            // 
+            this.btn_home.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_home.AnimationHoverSpeed = 0.07F;
+            this.btn_home.AnimationSpeed = 0.03F;
+            this.btn_home.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_home.BorderColor = System.Drawing.Color.Black;
+            this.btn_home.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
+            this.btn_home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_home.ImageSize = new System.Drawing.Size(15, 15);
+            this.btn_home.Location = new System.Drawing.Point(3, 3);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
+            this.btn_home.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_home.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_home.OnHoverImage = null;
+            this.btn_home.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_home.Size = new System.Drawing.Size(220, 101);
+            this.btn_home.TabIndex = 0;
+            this.btn_home.Text = "Home";
+            this.btn_home.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_report
+            // 
+            this.btn_report.AnimationHoverSpeed = 0.07F;
+            this.btn_report.AnimationSpeed = 0.03F;
+            this.btn_report.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_report.BorderColor = System.Drawing.Color.Black;
+            this.btn_report.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_report.ForeColor = System.Drawing.Color.White;
+            this.btn_report.Image = ((System.Drawing.Image)(resources.GetObject("btn_report.Image")));
+            this.btn_report.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_report.ImageSize = new System.Drawing.Size(15, 15);
+            this.btn_report.Location = new System.Drawing.Point(229, 3);
+            this.btn_report.Name = "btn_report";
+            this.btn_report.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
+            this.btn_report.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_report.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_report.OnHoverImage = null;
+            this.btn_report.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_report.Size = new System.Drawing.Size(470, 101);
+            this.btn_report.TabIndex = 1;
+            this.btn_report.Text = "Report Lost and Found";
+            this.btn_report.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
+            // 
+            // btn_myReports
+            // 
+            this.btn_myReports.AnimationHoverSpeed = 0.07F;
+            this.btn_myReports.AnimationSpeed = 0.03F;
+            this.btn_myReports.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_myReports.BorderColor = System.Drawing.Color.Black;
+            this.btn_myReports.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_myReports.ForeColor = System.Drawing.Color.White;
+            this.btn_myReports.Image = ((System.Drawing.Image)(resources.GetObject("btn_myReports.Image")));
+            this.btn_myReports.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_myReports.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_myReports.Location = new System.Drawing.Point(705, 3);
+            this.btn_myReports.Name = "btn_myReports";
+            this.btn_myReports.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
+            this.btn_myReports.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_myReports.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_myReports.OnHoverImage = null;
+            this.btn_myReports.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_myReports.Size = new System.Drawing.Size(299, 101);
+            this.btn_myReports.TabIndex = 2;
+            this.btn_myReports.Text = "My Reports";
+            this.btn_myReports.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
@@ -239,6 +332,7 @@
             // 
             // flowLayoutPanel5
             // 
+            this.flowLayoutPanel5.Controls.Add(this.gunaCheckBox1);
             this.flowLayoutPanel5.Controls.Add(this.cbox_personal);
             this.flowLayoutPanel5.Controls.Add(this.cbox_valuables);
             this.flowLayoutPanel5.Controls.Add(this.cbox_course);
@@ -257,7 +351,7 @@
             this.cbox_personal.FillColor = System.Drawing.Color.White;
             this.cbox_personal.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_personal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_personal.Location = new System.Drawing.Point(3, 3);
+            this.cbox_personal.Location = new System.Drawing.Point(3, 53);
             this.cbox_personal.Name = "cbox_personal";
             this.cbox_personal.Size = new System.Drawing.Size(302, 44);
             this.cbox_personal.TabIndex = 1;
@@ -271,7 +365,7 @@
             this.cbox_valuables.FillColor = System.Drawing.Color.White;
             this.cbox_valuables.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_valuables.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_valuables.Location = new System.Drawing.Point(3, 53);
+            this.cbox_valuables.Location = new System.Drawing.Point(3, 103);
             this.cbox_valuables.Name = "cbox_valuables";
             this.cbox_valuables.Size = new System.Drawing.Size(162, 44);
             this.cbox_valuables.TabIndex = 2;
@@ -285,11 +379,156 @@
             this.cbox_course.FillColor = System.Drawing.Color.White;
             this.cbox_course.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox_course.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_course.Location = new System.Drawing.Point(3, 103);
+            this.cbox_course.Location = new System.Drawing.Point(3, 153);
             this.cbox_course.Name = "cbox_course";
             this.cbox_course.Size = new System.Drawing.Size(231, 44);
             this.cbox_course.TabIndex = 3;
             this.cbox_course.Text = "Course-related";
+            // 
+            // cbox_misc
+            // 
+            this.cbox_misc.BaseColor = System.Drawing.Color.White;
+            this.cbox_misc.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_misc.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_misc.FillColor = System.Drawing.Color.White;
+            this.cbox_misc.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_misc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_misc.Location = new System.Drawing.Point(3, 203);
+            this.cbox_misc.Name = "cbox_misc";
+            this.cbox_misc.Size = new System.Drawing.Size(221, 44);
+            this.cbox_misc.TabIndex = 4;
+            this.cbox_misc.Text = "Miscellaneous";
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539326F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46067F));
+            this.tableLayoutPanel4.Controls.Add(this.label3, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel6, 1, 1);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 713);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51652F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.48348F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(445, 333);
+            this.tableLayoutPanel4.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
+            this.label3.Location = new System.Drawing.Point(41, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 45);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Date posted";
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Controls.Add(this.cbox_all);
+            this.flowLayoutPanel6.Controls.Add(this.cbox_today);
+            this.flowLayoutPanel6.Controls.Add(this.cbox_week);
+            this.flowLayoutPanel6.Controls.Add(this.cbox_month);
+            this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(41, 58);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(401, 252);
+            this.flowLayoutPanel6.TabIndex = 5;
+            // 
+            // cbox_all
+            // 
+            this.cbox_all.BaseColor = System.Drawing.Color.White;
+            this.cbox_all.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_all.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_all.FillColor = System.Drawing.Color.White;
+            this.cbox_all.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_all.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_all.Location = new System.Drawing.Point(3, 3);
+            this.cbox_all.Name = "cbox_all";
+            this.cbox_all.Size = new System.Drawing.Size(69, 44);
+            this.cbox_all.TabIndex = 1;
+            this.cbox_all.Text = "All";
+            // 
+            // cbox_today
+            // 
+            this.cbox_today.BaseColor = System.Drawing.Color.White;
+            this.cbox_today.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_today.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_today.FillColor = System.Drawing.Color.White;
+            this.cbox_today.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_today.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_today.Location = new System.Drawing.Point(3, 53);
+            this.cbox_today.Name = "cbox_today";
+            this.cbox_today.Size = new System.Drawing.Size(116, 44);
+            this.cbox_today.TabIndex = 2;
+            this.cbox_today.Text = "Today";
+            // 
+            // cbox_week
+            // 
+            this.cbox_week.BaseColor = System.Drawing.Color.White;
+            this.cbox_week.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_week.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_week.FillColor = System.Drawing.Color.White;
+            this.cbox_week.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_week.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_week.Location = new System.Drawing.Point(3, 103);
+            this.cbox_week.Name = "cbox_week";
+            this.cbox_week.Size = new System.Drawing.Size(164, 44);
+            this.cbox_week.TabIndex = 3;
+            this.cbox_week.Text = "This week";
+            // 
+            // cbox_month
+            // 
+            this.cbox_month.BaseColor = System.Drawing.Color.White;
+            this.cbox_month.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_month.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_month.FillColor = System.Drawing.Color.White;
+            this.cbox_month.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox_month.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.cbox_month.Location = new System.Drawing.Point(3, 153);
+            this.cbox_month.Name = "cbox_month";
+            this.cbox_month.Size = new System.Drawing.Size(183, 44);
+            this.cbox_month.TabIndex = 4;
+            this.cbox_month.Text = "This month";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539326F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46067F));
+            this.tableLayoutPanel5.Controls.Add(this.gunaButton2, 1, 1);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 1052);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.303303F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.69669F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(445, 119);
+            this.tableLayoutPanel5.TabIndex = 9;
+            // 
+            // gunaButton2
+            // 
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaButton2.Image = null;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(41, 6);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(147)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Radius = 5;
+            this.gunaButton2.Size = new System.Drawing.Size(401, 60);
+            this.gunaButton2.TabIndex = 0;
+            this.gunaButton2.Text = "Apply Filters";
+            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // flow1
             // 
@@ -301,20 +540,7 @@
             this.flow1.Name = "flow1";
             this.flow1.Size = new System.Drawing.Size(1530, 1473);
             this.flow1.TabIndex = 3;
-            // 
-            // cbox_misc
-            // 
-            this.cbox_misc.BaseColor = System.Drawing.Color.White;
-            this.cbox_misc.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_misc.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_misc.FillColor = System.Drawing.Color.White;
-            this.cbox_misc.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbox_misc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_misc.Location = new System.Drawing.Point(3, 153);
-            this.cbox_misc.Name = "cbox_misc";
-            this.cbox_misc.Size = new System.Drawing.Size(221, 44);
-            this.cbox_misc.TabIndex = 4;
-            this.cbox_misc.Text = "Miscellaneous";
+            this.flow1.Paint += new System.Windows.Forms.PaintEventHandler(this.flow1_Paint);
             // 
             // flowLayoutPanel7
             // 
@@ -325,73 +551,6 @@
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(506, 115);
             this.flowLayoutPanel7.TabIndex = 4;
-            // 
-            // pnl_header
-            // 
-            this.pnl_header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.pnl_header.Controls.Add(this.flowLayoutPanel3);
-            this.pnl_header.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_header.Location = new System.Drawing.Point(515, 3);
-            this.pnl_header.Name = "pnl_header";
-            this.pnl_header.Size = new System.Drawing.Size(1530, 115);
-            this.pnl_header.TabIndex = 5;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.btn_home);
-            this.flowLayoutPanel3.Controls.Add(this.btn_report);
-            this.flowLayoutPanel3.Controls.Add(this.btn_myReports);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1338, 110);
-            this.flowLayoutPanel3.TabIndex = 2;
-            // 
-            // btn_home
-            // 
-            this.btn_home.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_home.AnimationHoverSpeed = 0.07F;
-            this.btn_home.AnimationSpeed = 0.03F;
-            this.btn_home.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_home.BorderColor = System.Drawing.Color.Black;
-            this.btn_home.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_home.ForeColor = System.Drawing.Color.White;
-            this.btn_home.Image = ((System.Drawing.Image)(resources.GetObject("btn_home.Image")));
-            this.btn_home.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_home.ImageSize = new System.Drawing.Size(15, 15);
-            this.btn_home.Location = new System.Drawing.Point(3, 3);
-            this.btn_home.Name = "btn_home";
-            this.btn_home.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
-            this.btn_home.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_home.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_home.OnHoverImage = null;
-            this.btn_home.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_home.Size = new System.Drawing.Size(220, 101);
-            this.btn_home.TabIndex = 0;
-            this.btn_home.Text = "Home";
-            this.btn_home.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btn_report
-            // 
-            this.btn_report.AnimationHoverSpeed = 0.07F;
-            this.btn_report.AnimationSpeed = 0.03F;
-            this.btn_report.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_report.BorderColor = System.Drawing.Color.Black;
-            this.btn_report.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_report.ForeColor = System.Drawing.Color.White;
-            this.btn_report.Image = ((System.Drawing.Image)(resources.GetObject("btn_report.Image")));
-            this.btn_report.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_report.ImageSize = new System.Drawing.Size(15, 15);
-            this.btn_report.Location = new System.Drawing.Point(229, 3);
-            this.btn_report.Name = "btn_report";
-            this.btn_report.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
-            this.btn_report.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_report.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_report.OnHoverImage = null;
-            this.btn_report.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_report.Size = new System.Drawing.Size(470, 101);
-            this.btn_report.TabIndex = 1;
-            this.btn_report.Text = "Report Lost and Found";
-            this.btn_report.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Lost2Found
             // 
@@ -446,159 +605,19 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(506, 115);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // btn_myReports
+            // gunaCheckBox1
             // 
-            this.btn_myReports.AnimationHoverSpeed = 0.07F;
-            this.btn_myReports.AnimationSpeed = 0.03F;
-            this.btn_myReports.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_myReports.BorderColor = System.Drawing.Color.Black;
-            this.btn_myReports.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_myReports.ForeColor = System.Drawing.Color.White;
-            this.btn_myReports.Image = ((System.Drawing.Image)(resources.GetObject("btn_myReports.Image")));
-            this.btn_myReports.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_myReports.ImageSize = new System.Drawing.Size(25, 25);
-            this.btn_myReports.Location = new System.Drawing.Point(705, 3);
-            this.btn_myReports.Name = "btn_myReports";
-            this.btn_myReports.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
-            this.btn_myReports.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_myReports.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_myReports.OnHoverImage = null;
-            this.btn_myReports.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_myReports.Size = new System.Drawing.Size(299, 101);
-            this.btn_myReports.TabIndex = 2;
-            this.btn_myReports.Text = "My Reports";
-            this.btn_myReports.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // flowLayoutPanel6
-            // 
-            this.flowLayoutPanel6.Controls.Add(this.cbox_all);
-            this.flowLayoutPanel6.Controls.Add(this.cbox_today);
-            this.flowLayoutPanel6.Controls.Add(this.cbox_week);
-            this.flowLayoutPanel6.Controls.Add(this.cbox_month);
-            this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(41, 57);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(401, 252);
-            this.flowLayoutPanel6.TabIndex = 5;
-            // 
-            // cbox_month
-            // 
-            this.cbox_month.BaseColor = System.Drawing.Color.White;
-            this.cbox_month.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_month.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_month.FillColor = System.Drawing.Color.White;
-            this.cbox_month.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbox_month.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_month.Location = new System.Drawing.Point(3, 153);
-            this.cbox_month.Name = "cbox_month";
-            this.cbox_month.Size = new System.Drawing.Size(183, 44);
-            this.cbox_month.TabIndex = 4;
-            this.cbox_month.Text = "This month";
-            // 
-            // cbox_week
-            // 
-            this.cbox_week.BaseColor = System.Drawing.Color.White;
-            this.cbox_week.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_week.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_week.FillColor = System.Drawing.Color.White;
-            this.cbox_week.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbox_week.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_week.Location = new System.Drawing.Point(3, 103);
-            this.cbox_week.Name = "cbox_week";
-            this.cbox_week.Size = new System.Drawing.Size(164, 44);
-            this.cbox_week.TabIndex = 3;
-            this.cbox_week.Text = "This week";
-            // 
-            // cbox_today
-            // 
-            this.cbox_today.BaseColor = System.Drawing.Color.White;
-            this.cbox_today.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_today.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_today.FillColor = System.Drawing.Color.White;
-            this.cbox_today.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbox_today.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_today.Location = new System.Drawing.Point(3, 53);
-            this.cbox_today.Name = "cbox_today";
-            this.cbox_today.Size = new System.Drawing.Size(116, 44);
-            this.cbox_today.TabIndex = 2;
-            this.cbox_today.Text = "Today";
-            // 
-            // cbox_all
-            // 
-            this.cbox_all.BaseColor = System.Drawing.Color.White;
-            this.cbox_all.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_all.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_all.FillColor = System.Drawing.Color.White;
-            this.cbox_all.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbox_all.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.cbox_all.Location = new System.Drawing.Point(3, 3);
-            this.cbox_all.Name = "cbox_all";
-            this.cbox_all.Size = new System.Drawing.Size(69, 44);
-            this.cbox_all.TabIndex = 1;
-            this.cbox_all.Text = "All";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(68)))), ((int)(((byte)(77)))));
-            this.label3.Location = new System.Drawing.Point(41, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 45);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Date posted";
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539326F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46067F));
-            this.tableLayoutPanel4.Controls.Add(this.label3, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.flowLayoutPanel6, 1, 1);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 713);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.51652F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.48348F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(445, 333);
-            this.tableLayoutPanel4.TabIndex = 8;
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 2;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539326F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46067F));
-            this.tableLayoutPanel5.Controls.Add(this.gunaButton2, 1, 1);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 1052);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.303303F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 96.69669F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(445, 119);
-            this.tableLayoutPanel5.TabIndex = 9;
-            // 
-            // gunaButton2
-            // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaButton2.Image = null;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(41, 6);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(147)))));
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Radius = 5;
-            this.gunaButton2.Size = new System.Drawing.Size(401, 60);
-            this.gunaButton2.TabIndex = 0;
-            this.gunaButton2.Text = "Apply Filters";
-            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox1.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaCheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.gunaCheckBox1.Location = new System.Drawing.Point(3, 3);
+            this.gunaCheckBox1.Name = "gunaCheckBox1";
+            this.gunaCheckBox1.Size = new System.Drawing.Size(69, 44);
+            this.gunaCheckBox1.TabIndex = 5;
+            this.gunaCheckBox1.Text = "All";
             // 
             // Home
             // 
@@ -614,6 +633,8 @@
             this.Load += new System.EventHandler(this.Home_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.pnl_header.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -624,16 +645,14 @@
             this.tableLayoutPanel3.PerformLayout();
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel5.PerformLayout();
-            this.flowLayoutPanel7.ResumeLayout(false);
-            this.pnl_header.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel6.ResumeLayout(false);
-            this.flowLayoutPanel6.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.flowLayoutPanel6.ResumeLayout(false);
+            this.flowLayoutPanel6.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel7.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -663,9 +682,6 @@
         private Guna.UI.WinForms.GunaButton btn_home;
         private Guna.UI.WinForms.GunaButton btn_report;
         private Guna.UI.WinForms.GunaButton Lost2Found;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
-        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
         private Guna.UI.WinForms.GunaButton btn_myReports;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label3;
@@ -676,5 +692,9 @@
         private Guna.UI.WinForms.GunaCheckBox cbox_month;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private Guna.UI.WinForms.GunaButton gunaButton2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
     }
 }

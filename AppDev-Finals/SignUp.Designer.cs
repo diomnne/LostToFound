@@ -1,6 +1,6 @@
 ﻿namespace AppDev_Finals
 {
-    partial class SignUp
+    partial class Signup
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_password = new Guna.UI.WinForms.GunaTextBox();
-            this.btn_signup = new Guna.UI.WinForms.GunaButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_email = new Guna.UI.WinForms.GunaTextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_password = new Guna.UI.WinForms.GunaTextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_confirmPass = new Guna.UI.WinForms.GunaTextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_signup = new Guna.UI.WinForms.GunaButton();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_lastname = new Guna.UI.WinForms.GunaTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_confirmPass = new Guna.UI.WinForms.GunaTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_username = new Guna.UI.WinForms.GunaTextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_firstname = new Guna.UI.WinForms.GunaTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -75,6 +79,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1920, 1200);
             this.tableLayoutPanel1.TabIndex = 2;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // panel1
             // 
@@ -89,11 +94,12 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.flowLayoutPanel3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(1171, 198);
+            this.panel2.Location = new System.Drawing.Point(1171, 146);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(538, 803);
+            this.panel2.Size = new System.Drawing.Size(538, 907);
             this.panel2.TabIndex = 1;
             // 
             // panel4
@@ -101,7 +107,7 @@
             this.panel4.Controls.Add(this.flowLayoutPanel2);
             this.panel4.Controls.Add(this.flowLayoutPanel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 134);
+            this.panel4.Location = new System.Drawing.Point(0, 238);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(538, 669);
             this.panel4.TabIndex = 1;
@@ -125,70 +131,6 @@
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(538, 541);
             this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(3, 120);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 33);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Password";
-            // 
-            // txt_password
-            // 
-            this.txt_password.BaseColor = System.Drawing.Color.White;
-            this.txt_password.BorderColor = System.Drawing.Color.Silver;
-            this.txt_password.BorderSize = 1;
-            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_password.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_password.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.txt_password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_password.Location = new System.Drawing.Point(3, 156);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '•';
-            this.txt_password.Radius = 5;
-            this.txt_password.Size = new System.Drawing.Size(534, 65);
-            this.txt_password.TabIndex = 6;
-            // 
-            // btn_signup
-            // 
-            this.btn_signup.AnimationHoverSpeed = 0.07F;
-            this.btn_signup.AnimationSpeed = 0.03F;
-            this.btn_signup.BackColor = System.Drawing.Color.White;
-            this.btn_signup.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
-            this.btn_signup.BorderColor = System.Drawing.Color.Black;
-            this.btn_signup.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_signup.ForeColor = System.Drawing.Color.White;
-            this.btn_signup.Image = null;
-            this.btn_signup.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_signup.Location = new System.Drawing.Point(3, 377);
-            this.btn_signup.Name = "btn_signup";
-            this.btn_signup.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(147)))));
-            this.btn_signup.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_signup.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_signup.OnHoverImage = null;
-            this.btn_signup.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_signup.Radius = 5;
-            this.btn_signup.Size = new System.Drawing.Size(534, 65);
-            this.btn_signup.TabIndex = 12;
-            this.btn_signup.Text = "Sign up";
-            this.btn_signup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_signup.Click += new System.EventHandler(this.btn_signup_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.txt_username);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(538, 117);
-            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label2
             // 
@@ -218,26 +160,58 @@
             this.txt_email.Size = new System.Drawing.Size(534, 65);
             this.txt_email.TabIndex = 5;
             // 
-            // panel3
+            // panel7
             // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(538, 108);
-            this.panel3.TabIndex = 0;
+            this.panel7.Location = new System.Drawing.Point(3, 107);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(534, 10);
+            this.panel7.TabIndex = 17;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 91);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Sign up";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(3, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 33);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Password";
+            // 
+            // txt_password
+            // 
+            this.txt_password.BaseColor = System.Drawing.Color.White;
+            this.txt_password.BorderColor = System.Drawing.Color.Silver;
+            this.txt_password.BorderSize = 1;
+            this.txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_password.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_password.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_password.Location = new System.Drawing.Point(3, 156);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '•';
+            this.txt_password.Radius = 5;
+            this.txt_password.Size = new System.Drawing.Size(534, 65);
+            this.txt_password.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(3, 227);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(534, 10);
+            this.panel6.TabIndex = 16;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(3, 240);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(218, 33);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Confirm Password";
             // 
             // txt_confirmPass
             // 
@@ -256,17 +230,6 @@
             this.txt_confirmPass.Size = new System.Drawing.Size(534, 65);
             this.txt_confirmPass.TabIndex = 14;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(3, 240);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(218, 33);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Confirm Password";
-            // 
             // panel5
             // 
             this.panel5.Location = new System.Drawing.Point(3, 347);
@@ -274,47 +237,37 @@
             this.panel5.Size = new System.Drawing.Size(534, 24);
             this.panel5.TabIndex = 15;
             // 
-            // panel6
+            // btn_signup
             // 
-            this.panel6.Location = new System.Drawing.Point(3, 227);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(534, 10);
-            this.panel6.TabIndex = 16;
+            this.btn_signup.AnimationHoverSpeed = 0.07F;
+            this.btn_signup.AnimationSpeed = 0.03F;
+            this.btn_signup.BackColor = System.Drawing.Color.White;
+            this.btn_signup.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
+            this.btn_signup.BorderColor = System.Drawing.Color.Black;
+            this.btn_signup.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_signup.ForeColor = System.Drawing.Color.White;
+            this.btn_signup.Image = null;
+            this.btn_signup.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_signup.Location = new System.Drawing.Point(3, 377);
+            this.btn_signup.Name = "btn_signup";
+            this.btn_signup.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(147)))));
+            this.btn_signup.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_signup.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_signup.OnHoverImage = null;
+            this.btn_signup.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_signup.Radius = 5;
+            this.btn_signup.Size = new System.Drawing.Size(534, 65);
+            this.btn_signup.TabIndex = 12;
+            this.btn_signup.Text = "Sign up";
+            this.btn_signup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_signup.Click += new System.EventHandler(this.btn_signup_Click);
             // 
-            // label5
+            // panel8
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 33);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Username";
-            // 
-            // txt_username
-            // 
-            this.txt_username.BaseColor = System.Drawing.Color.White;
-            this.txt_username.BorderColor = System.Drawing.Color.Silver;
-            this.txt_username.BorderSize = 1;
-            this.txt_username.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_username.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_username.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.txt_username.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_username.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_username.Location = new System.Drawing.Point(3, 36);
-            this.txt_username.Name = "txt_username";
-            this.txt_username.PasswordChar = '\0';
-            this.txt_username.Radius = 5;
-            this.txt_username.Size = new System.Drawing.Size(534, 65);
-            this.txt_username.TabIndex = 6;
-            // 
-            // panel7
-            // 
-            this.panel7.Location = new System.Drawing.Point(3, 107);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(534, 10);
-            this.panel7.TabIndex = 17;
+            this.panel8.Location = new System.Drawing.Point(3, 448);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(534, 10);
+            this.panel8.TabIndex = 17;
             // 
             // gunaButton1
             // 
@@ -341,21 +294,114 @@
             this.gunaButton1.Text = "Clear";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // panel8
+            // flowLayoutPanel1
             // 
-            this.panel8.Location = new System.Drawing.Point(3, 448);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(534, 10);
-            this.panel8.TabIndex = 17;
+            this.flowLayoutPanel1.Controls.Add(this.label5);
+            this.flowLayoutPanel1.Controls.Add(this.txt_lastname);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(538, 117);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // SignUp
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(132, 33);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Last Name";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // txt_lastname
+            // 
+            this.txt_lastname.BaseColor = System.Drawing.Color.White;
+            this.txt_lastname.BorderColor = System.Drawing.Color.Silver;
+            this.txt_lastname.BorderSize = 1;
+            this.txt_lastname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_lastname.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_lastname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_lastname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_lastname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_lastname.Location = new System.Drawing.Point(3, 36);
+            this.txt_lastname.Name = "txt_lastname";
+            this.txt_lastname.PasswordChar = '\0';
+            this.txt_lastname.Radius = 5;
+            this.txt_lastname.Size = new System.Drawing.Size(534, 65);
+            this.txt_lastname.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(538, 108);
+            this.panel3.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Calibri", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(199)))), ((int)(((byte)(39)))));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(265, 91);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Sign up";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.label6);
+            this.flowLayoutPanel3.Controls.Add(this.txt_firstname);
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 108);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(538, 117);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 33);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "First Name";
+            // 
+            // txt_firstname
+            // 
+            this.txt_firstname.BaseColor = System.Drawing.Color.White;
+            this.txt_firstname.BorderColor = System.Drawing.Color.Silver;
+            this.txt_firstname.BorderSize = 1;
+            this.txt_firstname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_firstname.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_firstname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_firstname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_firstname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_firstname.Location = new System.Drawing.Point(3, 36);
+            this.txt_firstname.Name = "txt_firstname";
+            this.txt_firstname.PasswordChar = '\0';
+            this.txt_firstname.Radius = 5;
+            this.txt_firstname.Size = new System.Drawing.Size(534, 65);
+            this.txt_firstname.TabIndex = 6;
+            // 
+            // Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1200);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SignUp";
+            this.Name = "Signup";
             this.Text = "SignUp";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -367,6 +413,8 @@
             this.flowLayoutPanel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -391,9 +439,12 @@
         private Guna.UI.WinForms.GunaTextBox txt_confirmPass;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaTextBox txt_username;
+        private Guna.UI.WinForms.GunaTextBox txt_lastname;
         private System.Windows.Forms.Panel panel7;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI.WinForms.GunaTextBox txt_firstname;
     }
 }

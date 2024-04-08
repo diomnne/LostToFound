@@ -16,10 +16,15 @@ namespace AppDev_Finals
         {
             InitializeComponent();
 
-            label1.Text = name;
+            this.name.Text = name;
         }
 
         private void Timeline_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaShadowPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

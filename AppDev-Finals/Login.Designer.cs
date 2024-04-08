@@ -1,6 +1,6 @@
 ﻿namespace AppDev_Finals
 {
-    partial class Start
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -277,18 +277,18 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(80)))), ((int)(((byte)(91)))));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(511, 91);
+            this.label1.Size = new System.Drawing.Size(515, 91);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Getting Started";
+            this.label1.Text = "Welcome back!";
             // 
-            // Start
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1200);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Start";
+            this.Name = "Login";
             this.Text = "Start";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);

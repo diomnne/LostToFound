@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.image1 = new System.Windows.Forms.PictureBox();
             this.gunaShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // name
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(97, 75);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(128, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "francis pisot";
+            this.name.AutoSize = true;
+            this.name.BackColor = System.Drawing.Color.White;
+            this.name.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(97, 75);
+            this.name.Name = "name";
+            this.name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.name.Size = new System.Drawing.Size(166, 37);
+            this.name.TabIndex = 0;
+            this.name.Text = "francis pisot";
             // 
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel1.Controls.Add(this.panel1);
-            this.gunaShadowPanel1.Controls.Add(this.label1);
+            this.gunaShadowPanel1.Controls.Add(this.image1);
+            this.gunaShadowPanel1.Controls.Add(this.name);
             this.gunaShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
@@ -58,14 +60,15 @@
             this.gunaShadowPanel1.ShadowShift = 10;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(1480, 1473);
             this.gunaShadowPanel1.TabIndex = 1;
+            this.gunaShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaShadowPanel1_Paint);
             // 
-            // panel1
+            // image1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Location = new System.Drawing.Point(97, 151);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1282, 996);
-            this.panel1.TabIndex = 1;
+            this.image1.Location = new System.Drawing.Point(97, 148);
+            this.image1.Name = "image1";
+            this.image1.Size = new System.Drawing.Size(1285, 1000);
+            this.image1.TabIndex = 1;
+            this.image1.TabStop = false;
             // 
             // Post
             // 
@@ -78,14 +81,15 @@
             this.Load += new System.EventHandler(this.Timeline_Load);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label name;
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox image1;
     }
 }

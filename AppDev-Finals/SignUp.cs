@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AppDev_Finals
 {
-    public partial class SignUp : Form
+    public partial class Signup : Form
     {
-        public SignUp()
+        public Signup()
         {
             InitializeComponent();
         }
@@ -23,7 +23,6 @@ namespace AppDev_Finals
         private void btn_signup_Click(object sender, EventArgs e)
         {
             
-            string username = txt_username.Text;
             string email = txt_email.Text;
             string password = txt_password.Text;
 
@@ -33,10 +32,9 @@ namespace AppDev_Finals
             MySqlConnection conConn = new MySqlConnection(con);
             conConn.Open();
 
-            string insertSql = "INSERT INTO lost_and_found.user  (username, email, password) VALUES (?, ?, ?)";
+            string insertSql = "INSERT INTO lost_and_found.user  (email, password) VALUES (?, ?)";
             MySqlCommand insertCmd = new MySqlCommand(insertSql, conConn);
 
-            insertCmd.Parameters.AddWithValue("@username", username);
             insertCmd.Parameters.AddWithValue("@email", email);
             insertCmd.Parameters.AddWithValue("@password", password);
 
@@ -48,6 +46,15 @@ namespace AppDev_Finals
             h.Show();
             this.Hide();
         }
-        
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

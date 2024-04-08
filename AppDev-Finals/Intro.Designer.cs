@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Intro));
-            this.welcome1 = new AppDev_Finals.Start();
+            this.welcome1 = new AppDev_Finals.Login();
             this.SuspendLayout();
             // 
             // welcome1
@@ -58,7 +58,7 @@
 
         #endregion
 
-        private Start welcome1;
+        private Login welcome1;
     }
 }
 
