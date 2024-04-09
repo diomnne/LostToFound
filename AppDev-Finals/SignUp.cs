@@ -22,19 +22,25 @@ namespace AppDev_Finals
 
         private void btn_signup_Click(object sender, EventArgs e)
         {
-            
+            string firstname = txt_firstname.Text;
+            string lastname = txt_lastname.Text;
             string email = txt_email.Text;
             string password = txt_password.Text;
 
+            txt_firstname.Text = "";
+            txt_lastname.Text = "";
             txt_email.Text = "";
             txt_password.Text = "";
+
             string con = "server=127.0.0.1;uid=root;pwd=20181024;database=lost_and_found";
             MySqlConnection conConn = new MySqlConnection(con);
             conConn.Open();
 
-            string insertSql = "INSERT INTO lost_and_found.user  (email, password) VALUES (?, ?)";
+            string insertSql = "INSERT INTO lost_and_found.user  (firstname, lastname, email, password) VALUES (?, ?, ?, ?)";
             MySqlCommand insertCmd = new MySqlCommand(insertSql, conConn);
 
+            insertCmd.Parameters.AddWithValue("@firstname", firstname);
+            insertCmd.Parameters.AddWithValue("@lastname", lastname);
             insertCmd.Parameters.AddWithValue("@email", email);
             insertCmd.Parameters.AddWithValue("@password", password);
 
@@ -53,6 +59,34 @@ namespace AppDev_Finals
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_firstname_KeyUp(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void txt_firstname_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txt_lastname_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txt_email.Focus();
+            }
+        }
+
+        private void txt_email_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void txt_password_KeyDown(object sender, KeyEventArgs e)
         {
 
         }

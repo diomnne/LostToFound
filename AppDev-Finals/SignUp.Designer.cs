@@ -32,6 +32,9 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_lastname = new Guna.UI.WinForms.GunaTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,19 +51,16 @@
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_lastname = new Guna.UI.WinForms.GunaTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
             this.txt_firstname = new Guna.UI.WinForms.GunaTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -101,6 +101,45 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(538, 907);
             this.panel2.TabIndex = 1;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.label6);
+            this.flowLayoutPanel3.Controls.Add(this.txt_firstname);
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 108);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(538, 117);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 33);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "First Name";
+            // 
+            // txt_lastname
+            // 
+            this.txt_lastname.BaseColor = System.Drawing.Color.White;
+            this.txt_lastname.BorderColor = System.Drawing.Color.Silver;
+            this.txt_lastname.BorderSize = 1;
+            this.txt_lastname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_lastname.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_lastname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_lastname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_lastname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_lastname.Location = new System.Drawing.Point(3, 36);
+            this.txt_lastname.Name = "txt_lastname";
+            this.txt_lastname.PasswordChar = '\0';
+            this.txt_lastname.Radius = 5;
+            this.txt_lastname.Size = new System.Drawing.Size(534, 65);
+            this.txt_lastname.TabIndex = 6;
             // 
             // panel4
             // 
@@ -317,23 +356,6 @@
             this.label5.Text = "Last Name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // txt_lastname
-            // 
-            this.txt_lastname.BaseColor = System.Drawing.Color.White;
-            this.txt_lastname.BorderColor = System.Drawing.Color.Silver;
-            this.txt_lastname.BorderSize = 1;
-            this.txt_lastname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_lastname.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_lastname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.txt_lastname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_lastname.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_lastname.Location = new System.Drawing.Point(3, 36);
-            this.txt_lastname.Name = "txt_lastname";
-            this.txt_lastname.PasswordChar = '\0';
-            this.txt_lastname.Radius = 5;
-            this.txt_lastname.Size = new System.Drawing.Size(534, 65);
-            this.txt_lastname.TabIndex = 6;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label1);
@@ -355,28 +377,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign up";
             // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.label6);
-            this.flowLayoutPanel3.Controls.Add(this.txt_firstname);
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 108);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(538, 117);
-            this.flowLayoutPanel3.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 33);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "First Name";
-            // 
             // txt_firstname
             // 
             this.txt_firstname.BaseColor = System.Drawing.Color.White;
@@ -392,7 +392,7 @@
             this.txt_firstname.PasswordChar = '\0';
             this.txt_firstname.Radius = 5;
             this.txt_firstname.Size = new System.Drawing.Size(534, 65);
-            this.txt_firstname.TabIndex = 6;
+            this.txt_firstname.TabIndex = 7;
             // 
             // Signup
             // 
@@ -406,6 +406,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
@@ -413,8 +415,6 @@
             this.flowLayoutPanel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -439,12 +439,12 @@
         private Guna.UI.WinForms.GunaTextBox txt_confirmPass;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaTextBox txt_lastname;
         private System.Windows.Forms.Panel panel7;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Label label6;
+        private Guna.UI.WinForms.GunaTextBox txt_lastname;
         private Guna.UI.WinForms.GunaTextBox txt_firstname;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace AppDev_Finals
 {
@@ -46,6 +47,11 @@ namespace AppDev_Finals
             {
                 MessageBox.Show("An error occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void datePicker_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

@@ -60,5 +60,10 @@ namespace AppDev_Finals
 
             
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
