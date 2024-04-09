@@ -31,7 +31,6 @@ namespace AppDev_Finals
             txt_lastname.Text = "";
             txt_email.Text = "";
             txt_password.Text = "";
-
             string con = "server=127.0.0.1;uid=root;pwd=20181024;database=lost_and_found";
             MySqlConnection conConn = new MySqlConnection(con);
             conConn.Open();
