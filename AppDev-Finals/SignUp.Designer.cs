@@ -34,7 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_lastname = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_firstname = new Guna.UI.WinForms.GunaTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,9 +51,9 @@
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt_lastname = new Guna.UI.WinForms.GunaTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_firstname = new Guna.UI.WinForms.GunaTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -124,22 +124,22 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "First Name";
             // 
-            // txt_lastname
+            // txt_firstname
             // 
-            this.txt_lastname.BaseColor = System.Drawing.Color.White;
-            this.txt_lastname.BorderColor = System.Drawing.Color.Silver;
-            this.txt_lastname.BorderSize = 1;
-            this.txt_lastname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_lastname.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_lastname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.txt_lastname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_lastname.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_lastname.Location = new System.Drawing.Point(3, 36);
-            this.txt_lastname.Name = "txt_lastname";
-            this.txt_lastname.PasswordChar = '\0';
-            this.txt_lastname.Radius = 5;
-            this.txt_lastname.Size = new System.Drawing.Size(534, 65);
-            this.txt_lastname.TabIndex = 6;
+            this.txt_firstname.BaseColor = System.Drawing.Color.White;
+            this.txt_firstname.BorderColor = System.Drawing.Color.Silver;
+            this.txt_firstname.BorderSize = 1;
+            this.txt_firstname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_firstname.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_firstname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_firstname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_firstname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_firstname.Location = new System.Drawing.Point(3, 36);
+            this.txt_firstname.Name = "txt_firstname";
+            this.txt_firstname.PasswordChar = '\0';
+            this.txt_firstname.Radius = 5;
+            this.txt_firstname.Size = new System.Drawing.Size(534, 65);
+            this.txt_firstname.TabIndex = 7;
             // 
             // panel4
             // 
@@ -356,6 +356,23 @@
             this.label5.Text = "Last Name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // txt_lastname
+            // 
+            this.txt_lastname.BaseColor = System.Drawing.Color.White;
+            this.txt_lastname.BorderColor = System.Drawing.Color.Silver;
+            this.txt_lastname.BorderSize = 1;
+            this.txt_lastname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_lastname.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_lastname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_lastname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_lastname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_lastname.Location = new System.Drawing.Point(3, 36);
+            this.txt_lastname.Name = "txt_lastname";
+            this.txt_lastname.PasswordChar = '\0';
+            this.txt_lastname.Radius = 5;
+            this.txt_lastname.Size = new System.Drawing.Size(534, 65);
+            this.txt_lastname.TabIndex = 6;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label1);
@@ -376,23 +393,6 @@
             this.label1.Size = new System.Drawing.Size(265, 91);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign up";
-            // 
-            // txt_firstname
-            // 
-            this.txt_firstname.BaseColor = System.Drawing.Color.White;
-            this.txt_firstname.BorderColor = System.Drawing.Color.Silver;
-            this.txt_firstname.BorderSize = 1;
-            this.txt_firstname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_firstname.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_firstname.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.txt_firstname.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_firstname.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_firstname.Location = new System.Drawing.Point(3, 36);
-            this.txt_firstname.Name = "txt_firstname";
-            this.txt_firstname.PasswordChar = '\0';
-            this.txt_firstname.Radius = 5;
-            this.txt_firstname.Size = new System.Drawing.Size(534, 65);
-            this.txt_firstname.TabIndex = 7;
             // 
             // Signup
             // 
