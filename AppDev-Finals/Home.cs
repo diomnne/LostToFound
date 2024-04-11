@@ -16,8 +16,7 @@ namespace AppDev_Finals
         public Home()
         {
             InitializeComponent();
-            newsFeed();
-        }
+        }    
 
         private void Home_Load(object sender, EventArgs e)
         {
@@ -39,17 +38,9 @@ namespace AppDev_Finals
                 string name = (string)reader["email"];
 
                 Post post = new Post(name);
-                flow1.Controls.Add(post);
 
 
             }
-        }
-
-        private void btn_home_Click_1(object sender, EventArgs e)
-        {
-            flow1.Controls.Clear();
-            newsFeed();
-
         }
 
         private void newsFeed()
@@ -67,24 +58,60 @@ namespace AppDev_Finals
                 string name = (string)reader["email"];
 
                 Post post = new Post(name);
-                flow1.Controls.Add(post);
+                
             }
         }
 
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
 
+        bool sidebarExpand = true;
+
+        private void sidebarTransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                sidebar.Width -= 10;
+
+                if (sidebar.Width <= 60)
+                {
+                    sidebarExpand = false;
+                    sidebarTransition.Stop();
+                }
+            }
+            else
+            {
+                sidebar.Width += 10;
+
+                if (sidebar.Width >= 220)
+                {
+                    sidebarExpand = true;
+                    sidebarTransition.Stop();
+                }
+            }
         }
 
-        private void btn_report_Click(object sender, EventArgs e)
+        private void btn_sidebar_Click(object sender, EventArgs e)
         {
-            Report r = new Report();
-            r.Show();
+            sidebarTransition.Start();
         }
 
-        private void flow1_Paint(object sender, PaintEventArgs e)
+        private void btn_exit_Click(object sender, EventArgs e)
         {
-
+            if(MessageBox.Show("Are you sure you want to exit?", "Exit message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+
+            if (MessageBox.Show("Are you sure you want to log out?", "Exit message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                l.Show();
+                this.Hide();
+            }
+        }
+
     }
 }

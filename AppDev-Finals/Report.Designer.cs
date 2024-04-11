@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report));
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.image1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_upload = new Guna.UI.WinForms.GunaButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_firstname = new Guna.UI.WinForms.GunaTextBox();
@@ -49,32 +47,22 @@
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.typePicker = new Guna.UI.WinForms.GunaComboBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.image1);
-            this.flowLayoutPanel3.Controls.Add(this.panel1);
-            this.flowLayoutPanel3.Controls.Add(this.label6);
-            this.flowLayoutPanel3.Controls.Add(this.btn_upload);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(71, 49);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(579, 726);
-            this.flowLayoutPanel3.TabIndex = 8;
             // 
             // image1
             // 
             this.image1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.image1.Location = new System.Drawing.Point(3, 3);
+            this.image1.Location = new System.Drawing.Point(67, 35);
             this.image1.Name = "image1";
             this.image1.Size = new System.Drawing.Size(570, 570);
             this.image1.TabIndex = 1;
@@ -85,7 +73,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(3, 592);
+            this.label6.Location = new System.Drawing.Point(62, 625);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(503, 30);
             this.label6.TabIndex = 5;
@@ -102,7 +90,7 @@
             this.btn_upload.ForeColor = System.Drawing.Color.Black;
             this.btn_upload.Image = null;
             this.btn_upload.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_upload.Location = new System.Drawing.Point(3, 625);
+            this.btn_upload.Location = new System.Drawing.Point(67, 666);
             this.btn_upload.Name = "btn_upload";
             this.btn_upload.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.btn_upload.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -116,25 +104,12 @@
             this.btn_upload.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click_1);
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel4);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel5);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel6);
-            this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel7);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(656, 49);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(641, 726);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.label2);
             this.flowLayoutPanel2.Controls.Add(this.txt_firstname);
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(661, 35);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(638, 102);
             this.flowLayoutPanel2.TabIndex = 0;
@@ -164,7 +139,7 @@
             this.txt_firstname.Name = "txt_firstname";
             this.txt_firstname.PasswordChar = '\0';
             this.txt_firstname.Radius = 5;
-            this.txt_firstname.Size = new System.Drawing.Size(550, 60);
+            this.txt_firstname.Size = new System.Drawing.Size(550, 50);
             this.txt_firstname.TabIndex = 8;
             // 
             // flowLayoutPanel4
@@ -172,7 +147,7 @@
             this.flowLayoutPanel4.Controls.Add(this.label1);
             this.flowLayoutPanel4.Controls.Add(this.gunaTextBox1);
             this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(3, 111);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(661, 136);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(638, 102);
             this.flowLayoutPanel4.TabIndex = 9;
@@ -202,7 +177,7 @@
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Radius = 5;
-            this.gunaTextBox1.Size = new System.Drawing.Size(550, 60);
+            this.gunaTextBox1.Size = new System.Drawing.Size(550, 50);
             this.gunaTextBox1.TabIndex = 8;
             // 
             // flowLayoutPanel5
@@ -210,7 +185,7 @@
             this.flowLayoutPanel5.Controls.Add(this.label3);
             this.flowLayoutPanel5.Controls.Add(this.datePicker);
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(3, 219);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(661, 333);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(638, 90);
             this.flowLayoutPanel5.TabIndex = 10;
@@ -242,7 +217,7 @@
             this.flowLayoutPanel6.Controls.Add(this.label4);
             this.flowLayoutPanel6.Controls.Add(this.timePicker);
             this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 315);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(661, 429);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(638, 90);
             this.flowLayoutPanel6.TabIndex = 11;
@@ -276,9 +251,9 @@
             this.flowLayoutPanel7.Controls.Add(this.label5);
             this.flowLayoutPanel7.Controls.Add(this.gunaTextBox2);
             this.flowLayoutPanel7.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(3, 411);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(661, 529);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(638, 240);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(638, 196);
             this.flowLayoutPanel7.TabIndex = 12;
             // 
             // label5
@@ -307,34 +282,75 @@
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
             this.gunaTextBox2.Radius = 5;
-            this.gunaTextBox2.Size = new System.Drawing.Size(550, 110);
+            this.gunaTextBox2.Size = new System.Drawing.Size(550, 86);
             this.gunaTextBox2.TabIndex = 8;
             // 
-            // panel1
+            // typePicker
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 579);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(464, 10);
-            this.panel1.TabIndex = 6;
+            this.typePicker.BackColor = System.Drawing.Color.Transparent;
+            this.typePicker.BaseColor = System.Drawing.Color.White;
+            this.typePicker.BorderColor = System.Drawing.Color.Silver;
+            this.typePicker.BorderSize = 1;
+            this.typePicker.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.typePicker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.typePicker.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.typePicker.ForeColor = System.Drawing.Color.Black;
+            this.typePicker.FormattingEnabled = true;
+            this.typePicker.Items.AddRange(new object[] {
+            "",
+            "Personal Belongings",
+            "Valuables",
+            "Course-related",
+            "Miscellaneous"});
+            this.typePicker.Location = new System.Drawing.Point(3, 33);
+            this.typePicker.Name = "typePicker";
+            this.typePicker.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.typePicker.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.typePicker.Size = new System.Drawing.Size(446, 44);
+            this.typePicker.TabIndex = 13;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.label7);
+            this.flowLayoutPanel1.Controls.Add(this.typePicker);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(661, 237);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(638, 90);
+            this.flowLayoutPanel1.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 30);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Item Type";
             // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1544, 1027);
+            this.ClientSize = new System.Drawing.Size(1402, 871);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.flowLayoutPanel6);
+            this.Controls.Add(this.flowLayoutPanel5);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.image1);
+            this.Controls.Add(this.flowLayoutPanel7);
+            this.Controls.Add(this.btn_upload);
+            this.Controls.Add(this.flowLayoutPanel4);
+            this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Report";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Report Lost Items";
             this.Load += new System.EventHandler(this.Report_Load);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
@@ -345,17 +361,17 @@
             this.flowLayoutPanel6.PerformLayout();
             this.flowLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel7.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.PictureBox image1;
         private System.Windows.Forms.Label label6;
         private Guna.UI.WinForms.GunaButton btn_upload;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private Guna.UI.WinForms.GunaTextBox txt_firstname;
         private System.Windows.Forms.Label label2;
@@ -371,6 +387,8 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
-        private System.Windows.Forms.Panel panel1;
+        private Guna.UI.WinForms.GunaComboBox typePicker;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label7;
     }
 }
