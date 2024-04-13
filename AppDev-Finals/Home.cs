@@ -16,11 +16,26 @@ namespace AppDev_Finals
         public Home()
         {
             InitializeComponent();
-        }    
+        }
+
+        public void loadForm(object Form)
+        {
+            if(this.mainpanel.Controls.Count > 0)
+            {
+                this.mainpanel.Controls.RemoveAt(0);
+            }
+
+            Form f = Form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainpanel.Controls.Add(f);
+            this.mainpanel.Tag = f;
+            f.Show();
+        }
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+            loadForm(new Dashboard());
         }
 
         private void btn_home_click(object sender, EventArgs e)
@@ -96,7 +111,7 @@ namespace AppDev_Finals
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Are you sure you want to exit?", "Exit message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if(MessageBox.Show("Are you sure you want to exit?", "Exit application", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -106,12 +121,31 @@ namespace AppDev_Finals
         {
             Login l = new Login();
 
-            if (MessageBox.Show("Are you sure you want to log out?", "Exit message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 l.Show();
                 this.Hide();
             }
         }
 
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            loadForm(new Dashboard());  
+        }
+
+        private void btn_profile_Click(object sender, EventArgs e)
+        {
+            loadForm(new Profile());
+        }
+
+        private void btn_manage_Click(object sender, EventArgs e)
+        {
+            loadForm(new ManageItems());
+        }
+
+        private void btn_settings_Click(object sender, EventArgs e)
+        {
+            loadForm(new Settings());
+        }
     }
 }

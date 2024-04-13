@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace AppDev_Finals
 {
-    public partial class Dashboard : Form
+    public partial class ManageItems : Form
     {
-        public Dashboard()
+        public ManageItems()
         {
             InitializeComponent();
-        }
-
-        private void Dashboard_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
