@@ -31,6 +31,7 @@ namespace AppDev_Finals
             txt_lastname.Text = "";
             txt_email.Text = "";
             txt_password.Text = "";
+
             string con = "server=127.0.0.1;uid=root;pwd=20181024;database=lost_and_found";
             MySqlConnection conConn = new MySqlConnection(con);
             conConn.Open();
@@ -38,16 +39,16 @@ namespace AppDev_Finals
             string insertSql = "INSERT INTO lost_and_found.user  (firstname, lastname, email, password) VALUES (?, ?, ?, ?)";
             MySqlCommand insertCmd = new MySqlCommand(insertSql, conConn);
 
-            insertCmd.Parameters.AddWithValue("@firstname", firstname);
-            insertCmd.Parameters.AddWithValue("@lastname", lastname);
-            insertCmd.Parameters.AddWithValue("@email", email);
-            insertCmd.Parameters.AddWithValue("@password", password);
+            insertCmd.Parameters.AddWithValue("@Firstname", firstname);
+            insertCmd.Parameters.AddWithValue("@Lastname", lastname);
+            insertCmd.Parameters.AddWithValue("@Email", email);
+            insertCmd.Parameters.AddWithValue("@Password", password);
 
             insertCmd.ExecuteNonQuery();
 
             conConn.Close();
 
-            Home h = new Home();
+            Home h = new Home(email);
             h.Show();
             this.Hide();
         }

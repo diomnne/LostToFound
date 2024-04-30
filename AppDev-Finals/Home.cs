@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,9 +14,34 @@ namespace AppDev_Finals
 {
     public partial class Home : Form
     {
-        public Home()
+        Functions functions = new Functions();
+        User user;
+        string email;
+        public Home(string email)
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            this.email = email;
+            user = functions.InitializeUser(email);
+            firstname.Text = functions.InitializeUser(email).FirstName;
+            lastname.Text = functions.InitializeUser(email).LastName;
+
+            SetImageFromByteArray1(profilepic, user.ProfilePicture);
+
+
+        }
+
+
+
+        public void SetImageFromByteArray1(PictureBox Image_cont, byte[] byteArray)
+        {
+            if (byteArray != null)
+            {
+                using (MemoryStream ms = new MemoryStream(byteArray))
+                {
+                    Image image = Image.FromStream(ms);
+                    Image_cont.Image = image;
+                }
+            }
         }
 
         public void loadForm(object Form)
@@ -130,12 +156,13 @@ namespace AppDev_Finals
 
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
-            loadForm(new Dashboard());  
+            loadForm(new Dashboard());
+            
         }
 
         private void btn_profile_Click(object sender, EventArgs e)
         {
-            loadForm(new Profile());
+            loadForm(new Profile(email));
         }
 
         private void btn_manage_Click(object sender, EventArgs e)
@@ -146,6 +173,27 @@ namespace AppDev_Finals
         private void btn_settings_Click(object sender, EventArgs e)
         {
             loadForm(new Settings());
+        }
+
+        private void btn_dashboard_MouseDown(object sender, MouseEventArgs e)
+        {
+            btn_dashboard.BackColor = Color.FromArgb(222, 196, 122);
+        }
+
+        private void btn_dashboard_MouseUp(object sender, MouseEventArgs e)
+        {
+            btn_dashboard.BackColor = Color.FromArgb(69, 90, 100); 
+        }
+
+        private void profilepic_Click(object sender, EventArgs e)
+        {
+            loadForm(new Profile(email));
+        }
+
+        private void btn_addNewItem_Click(object sender, EventArgs e)
+        {
+            Report report = new Report(); 
+            report.Show();
         }
     }
 }

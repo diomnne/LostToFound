@@ -140,10 +140,11 @@
             this.txt_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_password.Location = new System.Drawing.Point(3, 36);
             this.txt_password.Name = "txt_password";
-            this.txt_password.PasswordChar = '*';
+            this.txt_password.PasswordChar = '•';
             this.txt_password.Radius = 5;
             this.txt_password.Size = new System.Drawing.Size(534, 65);
             this.txt_password.TabIndex = 6;
+            this.txt_password.Text = "20181024";
             // 
             // panel6
             // 
@@ -260,6 +261,7 @@
             this.txt_email.Radius = 5;
             this.txt_email.Size = new System.Drawing.Size(534, 65);
             this.txt_email.TabIndex = 5;
+            this.txt_email.Text = "22-1-00586";
             // 
             // panel3
             // 

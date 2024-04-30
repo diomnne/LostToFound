@@ -107,6 +107,19 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ItemRow.Designer.cs">
+      <DependentUpon>ItemRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Intro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,11 +132,23 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditItem.Designer.cs">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageItems.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ManageItems.Designer.cs">
       <DependentUpon>ManageItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManageRow.Designer.cs">
+      <DependentUpon>ManageRow.cs</DependentUpon>
     </Compile>
     <Compile Include="Profile.cs">
       <SubType>Form</SubType>
@@ -163,8 +188,22 @@
     <Compile Include="Post.Designer.cs">
       <DependentUpon>Post.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="ViewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewItem.Designer.cs">
+      <DependentUpon>ViewItem.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRow.resx">
+      <DependentUpon>ItemRow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Intro.resx">
       <DependentUpon>Intro.cs</DependentUpon>
@@ -172,8 +211,14 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditItem.resx">
+      <DependentUpon>EditItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageItems.resx">
       <DependentUpon>ManageItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRow.resx">
+      <DependentUpon>ManageRow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
@@ -202,7 +247,11 @@
     <EmbeddedResource Include="Post.resx">
       <DependentUpon>Post.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewItem.resx">
+      <DependentUpon>ViewItem.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Item.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -215,6 +264,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

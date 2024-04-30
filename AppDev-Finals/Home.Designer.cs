@@ -31,33 +31,35 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.btn_notif = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_sidebar = new System.Windows.Forms.Button();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.Lost2Found = new Guna.UI.WinForms.GunaButton();
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lastname = new System.Windows.Forms.Label();
+            this.profil = new System.Windows.Forms.Panel();
+            this.profilepic = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.firstname = new System.Windows.Forms.Label();
             this.btn_profile = new Guna.UI.WinForms.GunaButton();
             this.btn_dashboard = new Guna.UI.WinForms.GunaButton();
             this.btn_manage = new Guna.UI.WinForms.GunaButton();
+            this.btn_addNewItem = new Guna.UI.WinForms.GunaButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_logout = new Guna.UI.WinForms.GunaButton();
             this.mainpanel = new System.Windows.Forms.Panel();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
-            this.btn_settings = new Guna.UI.WinForms.GunaButton();
             this.pnl_header.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.sidebar.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.profil.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_header
             // 
             this.pnl_header.BackColor = System.Drawing.Color.White;
-            this.pnl_header.Controls.Add(this.btn_notif);
             this.pnl_header.Controls.Add(this.btn_exit);
             this.pnl_header.Controls.Add(this.btn_sidebar);
             this.pnl_header.Controls.Add(this.flowLayoutPanel7);
@@ -66,19 +68,6 @@
             this.pnl_header.Name = "pnl_header";
             this.pnl_header.Size = new System.Drawing.Size(2560, 120);
             this.pnl_header.TabIndex = 5;
-            // 
-            // btn_notif
-            // 
-            this.btn_notif.BackColor = System.Drawing.Color.Transparent;
-            this.btn_notif.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_notif.BackgroundImage")));
-            this.btn_notif.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_notif.FlatAppearance.BorderSize = 0;
-            this.btn_notif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_notif.Location = new System.Drawing.Point(2400, 38);
-            this.btn_notif.Name = "btn_notif";
-            this.btn_notif.Size = new System.Drawing.Size(45, 45);
-            this.btn_notif.TabIndex = 7;
-            this.btn_notif.UseVisualStyleBackColor = false;
             // 
             // btn_exit
             // 
@@ -143,10 +132,10 @@
             // 
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.sidebar.Controls.Add(this.panel2);
-            this.sidebar.Controls.Add(this.btn_dashboard);
             this.sidebar.Controls.Add(this.btn_profile);
+            this.sidebar.Controls.Add(this.btn_dashboard);
             this.sidebar.Controls.Add(this.btn_manage);
-            this.sidebar.Controls.Add(this.btn_settings);
+            this.sidebar.Controls.Add(this.btn_addNewItem);
             this.sidebar.Controls.Add(this.panel1);
             this.sidebar.Controls.Add(this.btn_logout);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
@@ -158,32 +147,59 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lastname);
+            this.panel2.Controls.Add(this.profil);
+            this.panel2.Controls.Add(this.firstname);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 450);
+            this.panel2.Size = new System.Drawing.Size(450, 480);
             this.panel2.TabIndex = 5;
             // 
-            // panel3
+            // lastname
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel3.Location = new System.Drawing.Point(114, 100);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 200);
-            this.panel3.TabIndex = 2;
+            this.lastname.AutoSize = true;
+            this.lastname.BackColor = System.Drawing.Color.Transparent;
+            this.lastname.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastname.ForeColor = System.Drawing.Color.White;
+            this.lastname.Location = new System.Drawing.Point(137, 357);
+            this.lastname.Name = "lastname";
+            this.lastname.Size = new System.Drawing.Size(134, 37);
+            this.lastname.TabIndex = 3;
+            this.lastname.Text = "lastname";
             // 
-            // label1
+            // profil
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(168, 318);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 40);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "name";
+            this.profil.BackColor = System.Drawing.Color.Transparent;
+            this.profil.Controls.Add(this.profilepic);
+            this.profil.Location = new System.Drawing.Point(114, 100);
+            this.profil.Name = "profil";
+            this.profil.Size = new System.Drawing.Size(200, 200);
+            this.profil.TabIndex = 2;
+            // 
+            // profilepic
+            // 
+            this.profilepic.BaseColor = System.Drawing.Color.Gainsboro;
+            this.profilepic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.profilepic.Location = new System.Drawing.Point(0, 0);
+            this.profilepic.Name = "profilepic";
+            this.profilepic.Size = new System.Drawing.Size(200, 200);
+            this.profilepic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.profilepic.TabIndex = 0;
+            this.profilepic.TabStop = false;
+            this.profilepic.UseTransfarantBackground = false;
+            this.profilepic.Click += new System.EventHandler(this.profilepic_Click);
+            // 
+            // firstname
+            // 
+            this.firstname.AutoSize = true;
+            this.firstname.BackColor = System.Drawing.Color.Transparent;
+            this.firstname.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstname.ForeColor = System.Drawing.Color.White;
+            this.firstname.Location = new System.Drawing.Point(108, 322);
+            this.firstname.Name = "firstname";
+            this.firstname.Size = new System.Drawing.Size(140, 37);
+            this.firstname.TabIndex = 1;
+            this.firstname.Text = "firstname";
             // 
             // btn_profile
             // 
@@ -195,13 +211,13 @@
             this.btn_profile.ForeColor = System.Drawing.Color.White;
             this.btn_profile.Image = ((System.Drawing.Image)(resources.GetObject("btn_profile.Image")));
             this.btn_profile.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_profile.Location = new System.Drawing.Point(3, 571);
+            this.btn_profile.Location = new System.Drawing.Point(3, 489);
             this.btn_profile.Name = "btn_profile";
             this.btn_profile.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
             this.btn_profile.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_profile.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_profile.OnHoverImage = null;
-            this.btn_profile.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_profile.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
             this.btn_profile.Size = new System.Drawing.Size(450, 106);
             this.btn_profile.TabIndex = 1;
             this.btn_profile.Text = "Profile";
@@ -218,18 +234,19 @@
             this.btn_dashboard.ForeColor = System.Drawing.Color.White;
             this.btn_dashboard.Image = ((System.Drawing.Image)(resources.GetObject("btn_dashboard.Image")));
             this.btn_dashboard.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_dashboard.Location = new System.Drawing.Point(3, 459);
+            this.btn_dashboard.Location = new System.Drawing.Point(3, 601);
             this.btn_dashboard.Name = "btn_dashboard";
             this.btn_dashboard.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
             this.btn_dashboard.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_dashboard.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_dashboard.OnHoverImage = null;
-            this.btn_dashboard.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_dashboard.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
             this.btn_dashboard.Size = new System.Drawing.Size(450, 106);
             this.btn_dashboard.TabIndex = 0;
             this.btn_dashboard.Text = "Dashboard";
             this.btn_dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
+            this.btn_dashboard.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btn_dashboard_MouseUp);
             // 
             // btn_manage
             // 
@@ -241,24 +258,47 @@
             this.btn_manage.ForeColor = System.Drawing.Color.White;
             this.btn_manage.Image = ((System.Drawing.Image)(resources.GetObject("btn_manage.Image")));
             this.btn_manage.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_manage.Location = new System.Drawing.Point(3, 683);
+            this.btn_manage.Location = new System.Drawing.Point(3, 713);
             this.btn_manage.Name = "btn_manage";
             this.btn_manage.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
             this.btn_manage.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btn_manage.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_manage.OnHoverImage = null;
-            this.btn_manage.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_manage.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
             this.btn_manage.Size = new System.Drawing.Size(450, 106);
             this.btn_manage.TabIndex = 2;
             this.btn_manage.Text = "Manage Items";
             this.btn_manage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_manage.Click += new System.EventHandler(this.btn_manage_Click);
             // 
+            // btn_addNewItem
+            // 
+            this.btn_addNewItem.AnimationHoverSpeed = 0.07F;
+            this.btn_addNewItem.AnimationSpeed = 0.03F;
+            this.btn_addNewItem.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_addNewItem.BorderColor = System.Drawing.Color.Black;
+            this.btn_addNewItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addNewItem.ForeColor = System.Drawing.Color.White;
+            this.btn_addNewItem.Image = ((System.Drawing.Image)(resources.GetObject("btn_addNewItem.Image")));
+            this.btn_addNewItem.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_addNewItem.Location = new System.Drawing.Point(3, 825);
+            this.btn_addNewItem.Name = "btn_addNewItem";
+            this.btn_addNewItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
+            this.btn_addNewItem.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_addNewItem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_addNewItem.OnHoverImage = null;
+            this.btn_addNewItem.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
+            this.btn_addNewItem.Size = new System.Drawing.Size(450, 106);
+            this.btn_addNewItem.TabIndex = 6;
+            this.btn_addNewItem.Text = "Add New Item";
+            this.btn_addNewItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_addNewItem.Click += new System.EventHandler(this.btn_addNewItem_Click);
+            // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 907);
+            this.panel1.Location = new System.Drawing.Point(3, 937);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 385);
+            this.panel1.Size = new System.Drawing.Size(450, 355);
             this.panel1.TabIndex = 4;
             // 
             // btn_logout
@@ -297,29 +337,6 @@
             this.sidebarTransition.Interval = 10;
             this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
             // 
-            // btn_settings
-            // 
-            this.btn_settings.AnimationHoverSpeed = 0.07F;
-            this.btn_settings.AnimationSpeed = 0.03F;
-            this.btn_settings.BaseColor = System.Drawing.Color.Transparent;
-            this.btn_settings.BorderColor = System.Drawing.Color.Black;
-            this.btn_settings.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_settings.ForeColor = System.Drawing.Color.White;
-            this.btn_settings.Image = ((System.Drawing.Image)(resources.GetObject("btn_settings.Image")));
-            this.btn_settings.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_settings.Location = new System.Drawing.Point(3, 795);
-            this.btn_settings.Name = "btn_settings";
-            this.btn_settings.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(196)))), ((int)(((byte)(122)))));
-            this.btn_settings.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_settings.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_settings.OnHoverImage = null;
-            this.btn_settings.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.btn_settings.Size = new System.Drawing.Size(450, 106);
-            this.btn_settings.TabIndex = 6;
-            this.btn_settings.Text = "Settings";
-            this.btn_settings.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -339,6 +356,8 @@
             this.sidebar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.profil.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.profilepic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,11 +375,12 @@
         private System.Windows.Forms.Button btn_exit;
         private Guna.UI.WinForms.GunaButton btn_manage;
         private Guna.UI.WinForms.GunaButton btn_logout;
-        private System.Windows.Forms.Button btn_notif;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private Guna.UI.WinForms.GunaButton btn_settings;
+        private System.Windows.Forms.Label firstname;
+        private System.Windows.Forms.Panel profil;
+        private Guna.UI.WinForms.GunaButton btn_addNewItem;
+        private Guna.UI.WinForms.GunaCirclePictureBox profilepic;
+        private System.Windows.Forms.Label lastname;
     }
 }

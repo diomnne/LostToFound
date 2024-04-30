@@ -36,17 +36,17 @@ namespace AppDev_Finals
             string password = txt_password.Text;
 
 
-            string sql = "SELECT email, password FROM lost_and_found.user WHERE email=@email AND password=@password";
+            string sql = "SELECT Email, Password FROM lost_and_found.user WHERE email=@Email AND password=@Password";
             MySqlCommand cmd = new MySqlCommand(sql, conConn);
-            cmd.Parameters.AddWithValue("@email", email);
-            cmd.Parameters.AddWithValue("@password", password);
+            cmd.Parameters.AddWithValue("@Email", email);
+            cmd.Parameters.AddWithValue("@Password", password);
 
             MySqlDataReader reader = cmd.ExecuteReader();
 
             if (reader.Read())
             {
                 MessageBox.Show("Login Successful!");
-                Home h = new Home();
+                Home h = new Home(email);
                 h.Show();
                 this.Hide();
             }

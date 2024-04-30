@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Report));
-            this.image1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_upload = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -56,7 +55,7 @@
             this.choice_found = new Guna.UI.WinForms.GunaRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
+            this.image1 = new Guna.UI.WinForms.GunaPictureBox();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
@@ -64,16 +63,8 @@
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // image1
-            // 
-            this.image1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.image1.Location = new System.Drawing.Point(67, 72);
-            this.image1.Name = "image1";
-            this.image1.Size = new System.Drawing.Size(570, 570);
-            this.image1.TabIndex = 1;
-            this.image1.TabStop = false;
             // 
             // label6
             // 
@@ -252,6 +243,7 @@
             this.timePicker.ShowUpDown = true;
             this.timePicker.Size = new System.Drawing.Size(446, 39);
             this.timePicker.TabIndex = 7;
+            this.timePicker.ValueChanged += new System.EventHandler(this.timePicker_ValueChanged);
             // 
             // flowLayoutPanel7
             // 
@@ -415,6 +407,17 @@
             this.panel2.Size = new System.Drawing.Size(1232, 72);
             this.panel2.TabIndex = 19;
             // 
+            // image1
+            // 
+            this.image1.BaseColor = System.Drawing.Color.White;
+            this.image1.Image = ((System.Drawing.Image)(resources.GetObject("image1.Image")));
+            this.image1.Location = new System.Drawing.Point(67, 72);
+            this.image1.Name = "image1";
+            this.image1.Size = new System.Drawing.Size(570, 570);
+            this.image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.image1.TabIndex = 20;
+            this.image1.TabStop = false;
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -423,6 +426,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 1038);
+            this.Controls.Add(this.image1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_addItem);
@@ -430,7 +434,6 @@
             this.Controls.Add(this.flowLayoutPanel6);
             this.Controls.Add(this.flowLayoutPanel5);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.image1);
             this.Controls.Add(this.flowLayoutPanel7);
             this.Controls.Add(this.btn_upload);
             this.Controls.Add(this.flowLayoutPanel4);
@@ -438,9 +441,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Report";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Report Lost Items";
             this.Load += new System.EventHandler(this.Report_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
@@ -455,13 +458,13 @@
             this.flowLayoutPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox image1;
         private System.Windows.Forms.Label label6;
         private Guna.UI.WinForms.GunaButton btn_upload;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
@@ -488,5 +491,6 @@
         private Guna.UI.WinForms.GunaRadioButton choice_found;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private Guna.UI.WinForms.GunaPictureBox image1;
     }
 }
