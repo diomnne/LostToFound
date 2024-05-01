@@ -121,7 +121,7 @@
   <data name="gunaPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABeaSURBVHhe7Z0L
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABeaSURBVHhe7Z0L
         2G5jmcexhe0sGYxTyiGVIcKoHAbF7Gg0Uk5pKCQkhxxK5BrTOI7DTLXTNMl0IcZoJswlJmUaZTJdg5Eo
         hzFSCUmRSOb3X+/9Xt6953v3/g5rPet51vr/rut/+Xz7/dZzP8/93Pda773Wep5FTP688MILy6A56BPo
         GnQ3ehz9Fj0XP9+JrkKnoO3RkvHnxpgSIYi3Q5egX6Gp8nP0ObRFHM4YUwIE7R+hW1BdfA1tGYc3xuQI
@@ -228,7 +228,7 @@
   <data name="gunaPictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABhgSURBVHhe7Z0L
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABhgSURBVHhe7Z0L
         2K7VmMfV3rv2btfWlo52h6mUJKecGqSjY8ihyDVKNA2SjAlX5BBDhBIJaRymGDIOM0qKRFzJueSwOxA5
         lHOJQprm93/XvfOV9re/9/ve9133ep7/77r+1zWadvu/7nWv530Oa933HUx9br755jXRXdHu6JnoVeit
         6FT0KXQBuhT9BP02dANawY1oxT//KfoB+iY6G30InYhegw5Be6F7oHXirzfGTAIW3fpoV/RcpEV5Lvo5
@@ -339,7 +339,7 @@
   <data name="gunaPictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABg4SURBVHhe7d0J
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABg4SURBVHhe7d0J
         lGVFfcdxGZgZBgccQHaQTQUjbqxj2EQBZdNRIRAgoBg1RsVEBDRoXCIcBI8JKiLgQhBFAREXEEFQ3Ihb
         ggJKFBDihooIiCCIku/v1r/pnp7u6dfv1b237nu/zzm/czg6XVX3X/V6ea9u3UdY9z300EPrkO3JAeS1
         5HhyGjmPXEGuITeRW8gdkT+QMfrvsf9d/0b/Vl+jr1UbauvtRG2rD/W1TnRvZnXjBbeAbE0OJyeRS8gP

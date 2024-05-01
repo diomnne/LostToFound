@@ -39,12 +39,12 @@
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.btn_viewFound = new Guna.UI.WinForms.GunaButton();
             this.newFoundCtr = new System.Windows.Forms.Label();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaPictureBox3 = new Guna.UI.WinForms.GunaPictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.btn_viewLost = new Guna.UI.WinForms.GunaButton();
             this.newLostCtr = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -114,16 +114,17 @@
             this.btn_viewAll.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_viewAll.Location = new System.Drawing.Point(34, 135);
             this.btn_viewAll.Name = "btn_viewAll";
-            this.btn_viewAll.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_viewAll.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btn_viewAll.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_viewAll.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_viewAll.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(28)))), ((int)(((byte)(24)))));
             this.btn_viewAll.OnHoverImage = null;
-            this.btn_viewAll.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_viewAll.OnPressedColor = System.Drawing.Color.Transparent;
             this.btn_viewAll.Radius = 5;
             this.btn_viewAll.Size = new System.Drawing.Size(258, 42);
             this.btn_viewAll.TabIndex = 2;
             this.btn_viewAll.Text = "View";
             this.btn_viewAll.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_viewAll.Click += new System.EventHandler(this.btn_viewAll_Click);
             // 
             // AllCtr
             // 
@@ -163,7 +164,7 @@
             this.gunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(207)))), ((int)(((byte)(84)))));
             this.gunaElipsePanel2.Controls.Add(this.gunaPictureBox2);
             this.gunaElipsePanel2.Controls.Add(this.label3);
-            this.gunaElipsePanel2.Controls.Add(this.gunaButton1);
+            this.gunaElipsePanel2.Controls.Add(this.btn_viewFound);
             this.gunaElipsePanel2.Controls.Add(this.newFoundCtr);
             this.gunaElipsePanel2.Location = new System.Drawing.Point(735, 57);
             this.gunaElipsePanel2.Name = "gunaElipsePanel2";
@@ -195,28 +196,29 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "New Found Items";
             // 
-            // gunaButton1
+            // btn_viewFound
             // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.White;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(207)))), ((int)(((byte)(84)))));
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(34, 135);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Radius = 5;
-            this.gunaButton1.Size = new System.Drawing.Size(258, 42);
-            this.gunaButton1.TabIndex = 2;
-            this.gunaButton1.Text = "View";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_viewFound.AnimationHoverSpeed = 0.07F;
+            this.btn_viewFound.AnimationSpeed = 0.03F;
+            this.btn_viewFound.BaseColor = System.Drawing.Color.White;
+            this.btn_viewFound.BorderColor = System.Drawing.Color.Black;
+            this.btn_viewFound.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_viewFound.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(207)))), ((int)(((byte)(84)))));
+            this.btn_viewFound.Image = null;
+            this.btn_viewFound.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_viewFound.Location = new System.Drawing.Point(34, 135);
+            this.btn_viewFound.Name = "btn_viewFound";
+            this.btn_viewFound.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_viewFound.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_viewFound.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(123)))), ((int)(((byte)(29)))));
+            this.btn_viewFound.OnHoverImage = null;
+            this.btn_viewFound.OnPressedColor = System.Drawing.Color.Transparent;
+            this.btn_viewFound.Radius = 5;
+            this.btn_viewFound.Size = new System.Drawing.Size(258, 42);
+            this.btn_viewFound.TabIndex = 2;
+            this.btn_viewFound.Text = "View";
+            this.btn_viewFound.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_viewFound.Click += new System.EventHandler(this.btn_viewFound_Click);
             // 
             // newFoundCtr
             // 
@@ -235,7 +237,7 @@
             this.gunaElipsePanel3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(204)))), ((int)(((byte)(158)))));
             this.gunaElipsePanel3.Controls.Add(this.gunaPictureBox3);
             this.gunaElipsePanel3.Controls.Add(this.label5);
-            this.gunaElipsePanel3.Controls.Add(this.gunaButton2);
+            this.gunaElipsePanel3.Controls.Add(this.btn_viewLost);
             this.gunaElipsePanel3.Controls.Add(this.newLostCtr);
             this.gunaElipsePanel3.Location = new System.Drawing.Point(1309, 57);
             this.gunaElipsePanel3.Name = "gunaElipsePanel3";
@@ -267,28 +269,29 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "New Lost Items";
             // 
-            // gunaButton2
+            // btn_viewLost
             // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BaseColor = System.Drawing.Color.White;
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(204)))), ((int)(((byte)(158)))));
-            this.gunaButton2.Image = null;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(34, 135);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Radius = 5;
-            this.gunaButton2.Size = new System.Drawing.Size(258, 42);
-            this.gunaButton2.TabIndex = 2;
-            this.gunaButton2.Text = "View";
-            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_viewLost.AnimationHoverSpeed = 0.07F;
+            this.btn_viewLost.AnimationSpeed = 0.03F;
+            this.btn_viewLost.BaseColor = System.Drawing.Color.White;
+            this.btn_viewLost.BorderColor = System.Drawing.Color.Black;
+            this.btn_viewLost.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_viewLost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(204)))), ((int)(((byte)(158)))));
+            this.btn_viewLost.Image = null;
+            this.btn_viewLost.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_viewLost.Location = new System.Drawing.Point(34, 135);
+            this.btn_viewLost.Name = "btn_viewLost";
+            this.btn_viewLost.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.btn_viewLost.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_viewLost.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(89)))), ((int)(((byte)(40)))));
+            this.btn_viewLost.OnHoverImage = null;
+            this.btn_viewLost.OnPressedColor = System.Drawing.Color.Transparent;
+            this.btn_viewLost.Radius = 5;
+            this.btn_viewLost.Size = new System.Drawing.Size(258, 42);
+            this.btn_viewLost.TabIndex = 2;
+            this.btn_viewLost.Text = "View";
+            this.btn_viewLost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_viewLost.Click += new System.EventHandler(this.btn_viewLost_Click);
             // 
             // newLostCtr
             // 
@@ -448,12 +451,12 @@
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private System.Windows.Forms.Label label3;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton btn_viewFound;
         private System.Windows.Forms.Label newFoundCtr;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox3;
         private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaButton gunaButton2;
+        private Guna.UI.WinForms.GunaButton btn_viewLost;
         private System.Windows.Forms.Label newLostCtr;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;

@@ -81,6 +81,19 @@ namespace AppDev_Finals
 
         }
 
+        private void btn_viewAll_Click(object sender, EventArgs e)
+        {
+            updateDashboardData();
+        }
 
+        private void btn_viewFound_Click(object sender, EventArgs e)
+        {
+            updateDashboardData("FoundToday");
+        }
+
+        private void btn_viewLost_Click(object sender, EventArgs e)
+        {
+            updateDashboardData("LostToday");
+        }
     }
 }

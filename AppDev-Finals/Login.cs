@@ -25,15 +25,33 @@ namespace AppDev_Finals
             this.Hide();
         }
 
-        private void btn_login_Click(object sender, EventArgs e)
+        private void btn_login_Click(object sender, EventArgs e) 
         {
 
             string con = "server=127.0.0.1;uid=root;pwd=20181024;database=lost_and_found";
             MySqlConnection conConn = new MySqlConnection(con);
             conConn.Open();
 
-            string email = txt_email.Text;
-            string password = txt_password.Text;
+            string email = txt_email.Text.Trim();
+            string password = txt_password.Text; //173, 21, 21
+
+            if (string.IsNullOrEmpty(email))
+            {
+                txt_email.BorderColor = Color.FromArgb(173, 21, 21);
+                MessageBox.Show("Email is a required field");
+
+                txt_email.BorderColor = SystemColors.WindowFrame;
+                return; 
+            }
+
+            if (string.IsNullOrEmpty(password))
+            {
+                txt_password.BorderColor = Color.FromArgb(173, 21, 21);
+                MessageBox.Show("Incorrect password");
+
+                txt_password.BorderColor = SystemColors.WindowFrame;
+                return; 
+            }
 
 
             string sql = "SELECT Email, Password FROM lost_and_found.user WHERE email=@Email AND password=@Password";
@@ -52,7 +70,7 @@ namespace AppDev_Finals
             }
             else
             {
-                MessageBox.Show("Invalid email or password");
+                MessageBox.Show("Account does not exist");
             }
 
             reader.Close();
