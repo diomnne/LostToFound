@@ -186,9 +186,9 @@
             this.btn_claimed.OnHoverImage = null;
             this.btn_claimed.OnPressedColor = System.Drawing.Color.Black;
             this.btn_claimed.Radius = 3;
-            this.btn_claimed.Size = new System.Drawing.Size(159, 42);
+            this.btn_claimed.Size = new System.Drawing.Size(251, 42);
             this.btn_claimed.TabIndex = 16;
-            this.btn_claimed.Text = "Claimed";
+            this.btn_claimed.Text = "Mark as Claimed";
             this.btn_claimed.Click += new System.EventHandler(this.btn_claimed_Click);
             // 
             // ManageRow

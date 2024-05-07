@@ -44,7 +44,7 @@
             // 
             this.category.AutoSize = true;
             this.category.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category.Location = new System.Drawing.Point(411, 32);
+            this.category.Location = new System.Drawing.Point(441, 32);
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(106, 32);
             this.category.TabIndex = 0;
@@ -116,7 +116,7 @@
             // 
             this.location.AutoSize = true;
             this.location.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.location.Location = new System.Drawing.Point(601, 32);
+            this.location.Location = new System.Drawing.Point(631, 32);
             this.location.Name = "location";
             this.location.Size = new System.Drawing.Size(99, 32);
             this.location.TabIndex = 4;

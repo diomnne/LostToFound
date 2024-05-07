@@ -287,7 +287,7 @@
             this.txt_email.Radius = 5;
             this.txt_email.Size = new System.Drawing.Size(534, 65);
             this.txt_email.TabIndex = 5;
-            this.txt_email.Text = "22-1-00586";
+            this.txt_email.Text = "admin@gmail.com";
             // 
             // panel3
             // 

@@ -98,21 +98,14 @@ namespace AppDev_Finals
             }
             else
             {
-                if (itemName == "")
+                if (itemName == "" || placeFound == "" || reportedBy == "")
                 {
-                    MessageBox.Show("Item name cannot be blank");
+                    MessageBox.Show("Please fill out the empty fields");
                 }
-                else if (placeFound == "")
-                {
-                    MessageBox.Show("Location cannot be blank");
-                }
+                
                 else if (!flag)
                 {
                     MessageBox.Show("Please select a category");
-                }
-                else if (reportedBy == "")
-                {
-                    MessageBox.Show("Please enter your email");
                 }
 
             }

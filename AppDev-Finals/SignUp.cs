@@ -22,17 +22,48 @@ namespace AppDev_Finals
 
         private void btn_signup_Click(object sender, EventArgs e)
         {
-            string firstname = txt_firstname.Text;
-            string lastname = txt_lastname.Text;
+            string firstname = txt_firstname.Text.Trim();
+            string lastname = txt_lastname.Text.Trim();
             string email = txt_email.Text;
             string password = txt_password.Text;
             DateTime datejoined = DateTime.Now;
             int position = 0;
 
+            if (string.IsNullOrEmpty(firstname))
+            {
+                MessageBox.Show("Please enter your first name.");
+                return;
+            }
+
+            else if (string.IsNullOrEmpty(lastname))
+            {
+                MessageBox.Show("Please enter your last name.");
+                return;
+            }
+
+            else if (string.IsNullOrEmpty(email))
+            {
+                MessageBox.Show("Please enter your email address.");
+                return;
+            }
+
+            else if (string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please enter a password.");
+                return;
+            }
+
+            if (password != txt_confirmPass.Text)
+            {
+                MessageBox.Show("Passwords do not match. Please re-enter your password.");
+                return;
+            }
+
             txt_firstname.Text = "";
             txt_lastname.Text = "";
             txt_email.Text = "";
             txt_password.Text = "";
+            txt_confirmPass.Text = "";
 
             string con = "server=127.0.0.1;uid=root;pwd=20181024;database=lost_and_found";
             MySqlConnection conConn = new MySqlConnection(con);
@@ -52,8 +83,9 @@ namespace AppDev_Finals
 
             conConn.Close();
 
-            Home h = new Home(email);
-            h.Show();
+            MessageBox.Show("Your account has been created successfully!");
+            Login l = new Login();
+            l.Show();
             this.Hide();
         }
 

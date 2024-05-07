@@ -180,6 +180,7 @@
             // 
             this.profilepic.BaseColor = System.Drawing.Color.Gainsboro;
             this.profilepic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.profilepic.Image = ((System.Drawing.Image)(resources.GetObject("profilepic.Image")));
             this.profilepic.Location = new System.Drawing.Point(0, 0);
             this.profilepic.Name = "profilepic";
             this.profilepic.Size = new System.Drawing.Size(200, 200);

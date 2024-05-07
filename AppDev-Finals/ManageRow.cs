@@ -55,7 +55,7 @@ namespace AppDev_Finals
             f.updateClaimStatus(item.ItemID, item.ClaimStatus);
             btn_claimed.Visible = false;
 
-            MessageBox.Show("Item successfully marked as claimed!");
+            MessageBox.Show("Marked as claimed!");
         }
     }
 }

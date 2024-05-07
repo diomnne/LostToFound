@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
             this.label1 = new System.Windows.Forms.Label();
             this.profilePanel = new Guna.UI.WinForms.GunaShadowPanel();
+            this.btn_editprofile = new Guna.UI.WinForms.GunaButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.lbl_fullname = new System.Windows.Forms.Label();
             this.lbl_position = new System.Windows.Forms.Label();
             this.profilepic = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.btn_editprofile = new Guna.UI.WinForms.GunaButton();
             this.profilePanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
@@ -82,6 +82,32 @@
             this.profilePanel.ShadowStyle = Guna.UI.WinForms.ShadowMode.Dropped;
             this.profilePanel.Size = new System.Drawing.Size(753, 1111);
             this.profilePanel.TabIndex = 2;
+            // 
+            // btn_editprofile
+            // 
+            this.btn_editprofile.AnimationHoverSpeed = 0.07F;
+            this.btn_editprofile.AnimationSpeed = 0.03F;
+            this.btn_editprofile.BackColor = System.Drawing.Color.White;
+            this.btn_editprofile.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.btn_editprofile.BorderColor = System.Drawing.Color.Black;
+            this.btn_editprofile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editprofile.ForeColor = System.Drawing.Color.White;
+            this.btn_editprofile.Image = ((System.Drawing.Image)(resources.GetObject("btn_editprofile.Image")));
+            this.btn_editprofile.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_editprofile.ImageSize = new System.Drawing.Size(8, 8);
+            this.btn_editprofile.Location = new System.Drawing.Point(232, 919);
+            this.btn_editprofile.Name = "btn_editprofile";
+            this.btn_editprofile.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_editprofile.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_editprofile.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_editprofile.OnHoverImage = null;
+            this.btn_editprofile.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_editprofile.Radius = 5;
+            this.btn_editprofile.Size = new System.Drawing.Size(314, 55);
+            this.btn_editprofile.TabIndex = 12;
+            this.btn_editprofile.Text = "Edit Profile";
+            this.btn_editprofile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_editprofile.Click += new System.EventHandler(this.btn_editprofile_Click_1);
             // 
             // tableLayoutPanel1
             // 
@@ -237,6 +263,7 @@
             // 
             this.profilepic.BackColor = System.Drawing.Color.Transparent;
             this.profilepic.BaseColor = System.Drawing.Color.Gainsboro;
+            this.profilepic.Image = ((System.Drawing.Image)(resources.GetObject("profilepic.Image")));
             this.profilepic.Location = new System.Drawing.Point(232, 117);
             this.profilepic.Name = "profilepic";
             this.profilepic.Size = new System.Drawing.Size(300, 300);
@@ -245,32 +272,6 @@
             this.profilepic.TabStop = false;
             this.profilepic.UseTransfarantBackground = false;
             this.profilepic.Click += new System.EventHandler(this.profilepic_Click);
-            // 
-            // btn_editprofile
-            // 
-            this.btn_editprofile.AnimationHoverSpeed = 0.07F;
-            this.btn_editprofile.AnimationSpeed = 0.03F;
-            this.btn_editprofile.BackColor = System.Drawing.Color.White;
-            this.btn_editprofile.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.btn_editprofile.BorderColor = System.Drawing.Color.Black;
-            this.btn_editprofile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editprofile.ForeColor = System.Drawing.Color.White;
-            this.btn_editprofile.Image = ((System.Drawing.Image)(resources.GetObject("btn_editprofile.Image")));
-            this.btn_editprofile.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_editprofile.ImageSize = new System.Drawing.Size(8, 8);
-            this.btn_editprofile.Location = new System.Drawing.Point(232, 919);
-            this.btn_editprofile.Name = "btn_editprofile";
-            this.btn_editprofile.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.btn_editprofile.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_editprofile.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_editprofile.OnHoverImage = null;
-            this.btn_editprofile.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_editprofile.Radius = 5;
-            this.btn_editprofile.Size = new System.Drawing.Size(314, 55);
-            this.btn_editprofile.TabIndex = 12;
-            this.btn_editprofile.Text = "Edit Profile";
-            this.btn_editprofile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_editprofile.Click += new System.EventHandler(this.btn_editprofile_Click_1);
             // 
             // Profile
             // 

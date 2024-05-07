@@ -214,7 +214,7 @@
             this.flowLayoutPanel7.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel7.Location = new System.Drawing.Point(67, 551);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
-            this.flowLayoutPanel7.Size = new System.Drawing.Size(922, 162);
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(922, 242);
             this.flowLayoutPanel7.TabIndex = 40;
             // 
             // label5
@@ -233,17 +233,17 @@
             this.panel3.Controls.Add(this.description);
             this.panel3.Location = new System.Drawing.Point(3, 33);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(653, 103);
+            this.panel3.Size = new System.Drawing.Size(799, 166);
             this.panel3.TabIndex = 48;
             // 
             // description
             // 
-            this.description.AutoSize = true;
+            this.description.Dock = System.Windows.Forms.DockStyle.Fill;
             this.description.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description.ForeColor = System.Drawing.Color.Black;
-            this.description.Location = new System.Drawing.Point(0, 10);
+            this.description.Location = new System.Drawing.Point(0, 0);
             this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(132, 32);
+            this.description.Size = new System.Drawing.Size(799, 166);
             this.description.TabIndex = 7;
             this.description.Text = "description";
             // 
@@ -292,7 +292,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(964, 766);
+            this.ClientSize = new System.Drawing.Size(964, 838);
             this.Controls.Add(this.image1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel4);
@@ -317,7 +317,6 @@
             this.flowLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel7.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);

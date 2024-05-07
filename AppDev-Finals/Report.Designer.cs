@@ -195,9 +195,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 30);
+            this.label3.Size = new System.Drawing.Size(58, 30);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Date Found";
+            this.label3.Text = "Date";
             // 
             // datePicker
             // 
@@ -227,9 +227,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 30);
+            this.label4.Size = new System.Drawing.Size(61, 30);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Time Found";
+            this.label4.Text = "Time";
             // 
             // timePicker
             // 
@@ -262,9 +262,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 30);
+            this.label5.Size = new System.Drawing.Size(233, 30);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Description";
+            this.label5.Text = "Description (Optional)";
             // 
             // txt_description
             // 

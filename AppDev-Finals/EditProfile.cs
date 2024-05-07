@@ -145,8 +145,6 @@ namespace AppDev_Finals
 
         private void btn_editpfp_Click(object sender, EventArgs e)
         {
-
-            //MessageBox.Show(this.user.UserID + " ");
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg;*.png;*.gif)|*.bmp;*.jpg;*.jpeg;*.png;*.gif";
             openFileDialog.Title = "Select Profile Picture";
@@ -170,9 +168,7 @@ namespace AppDev_Finals
                         }
                     }
 
-                    
-
-                    MessageBox.Show( f.changeUserProfile(imageData, this.user.UserID) + "");
+                    f.changeUserProfile(imageData, this.user.UserID);
 
                 }
                 catch (FileNotFoundException ex)

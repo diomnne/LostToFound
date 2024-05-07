@@ -106,9 +106,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 30);
+            this.label5.Size = new System.Drawing.Size(131, 30);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Description";
+            this.label5.Text = "Description:";
             // 
             // txt_description
             // 
@@ -145,9 +145,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 30);
+            this.label4.Size = new System.Drawing.Size(67, 30);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Time Found";
+            this.label4.Text = "Time:";
             // 
             // label3
             // 
@@ -156,9 +156,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 30);
+            this.label3.Size = new System.Drawing.Size(64, 30);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Date Found";
+            this.label3.Text = "Date:";
             // 
             // flowLayoutPanel5
             // 
@@ -188,9 +188,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 30);
+            this.label1.Size = new System.Drawing.Size(104, 30);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Location";
+            this.label1.Text = "Location:";
             // 
             // txt_placefound
             // 
@@ -226,9 +226,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 30);
+            this.label2.Size = new System.Drawing.Size(124, 30);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Item name";
+            this.label2.Text = "Item name:";
             // 
             // txt_itemname
             // 
@@ -369,9 +369,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(258, 30);
+            this.label7.Size = new System.Drawing.Size(140, 30);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Reported by (User email)";
+            this.label7.Text = "Reported by:";
             // 
             // flowLayoutPanel1
             // 
