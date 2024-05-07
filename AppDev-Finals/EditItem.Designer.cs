@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditItem));
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_editInfo = new Guna.UI.WinForms.GunaButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.typePicker = new Guna.UI.WinForms.GunaComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_description = new Guna.UI.WinForms.GunaTextBox();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
@@ -49,15 +46,16 @@
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.timePicker = new System.Windows.Forms.DateTimePicker();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_upload = new Guna.UI.WinForms.GunaButton();
-            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.choice_found = new Guna.UI.WinForms.GunaRadioButton();
             this.choice_lost = new Guna.UI.WinForms.GunaRadioButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.btn_cancel = new Guna.UI.WinForms.GunaButton();
             this.image1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.label7 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel = new System.Windows.Forms.Panel();
+            this.txt_email = new System.Windows.Forms.Label();
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
@@ -65,6 +63,8 @@
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -98,51 +98,6 @@
             this.btn_editInfo.Text = "Save";
             this.btn_editInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_editInfo.Click += new System.EventHandler(this.btn_editInfo_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 30);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Item Type";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label7);
-            this.flowLayoutPanel1.Controls.Add(this.typePicker);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(666, 283);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(638, 90);
-            this.flowLayoutPanel1.TabIndex = 28;
-            // 
-            // typePicker
-            // 
-            this.typePicker.BackColor = System.Drawing.Color.Transparent;
-            this.typePicker.BaseColor = System.Drawing.Color.White;
-            this.typePicker.BorderColor = System.Drawing.Color.Silver;
-            this.typePicker.BorderSize = 1;
-            this.typePicker.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.typePicker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.typePicker.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.typePicker.ForeColor = System.Drawing.Color.Black;
-            this.typePicker.FormattingEnabled = true;
-            this.typePicker.Items.AddRange(new object[] {
-            "",
-            "Personal Belongings",
-            "Valuables",
-            "Course-related",
-            "Miscellaneous"});
-            this.typePicker.Location = new System.Drawing.Point(3, 33);
-            this.typePicker.Name = "typePicker";
-            this.typePicker.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.typePicker.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.typePicker.Size = new System.Drawing.Size(446, 44);
-            this.typePicker.TabIndex = 14;
             // 
             // label5
             // 
@@ -233,9 +188,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 30);
+            this.label1.Size = new System.Drawing.Size(98, 30);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Place Found";
+            this.label1.Text = "Location";
             // 
             // txt_placefound
             // 
@@ -325,41 +280,6 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(638, 102);
             this.flowLayoutPanel2.TabIndex = 20;
             // 
-            // btn_upload
-            // 
-            this.btn_upload.AnimationHoverSpeed = 0.07F;
-            this.btn_upload.AnimationSpeed = 0.03F;
-            this.btn_upload.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.btn_upload.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_upload.BorderSize = 1;
-            this.btn_upload.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_upload.ForeColor = System.Drawing.Color.Black;
-            this.btn_upload.Image = null;
-            this.btn_upload.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_upload.Location = new System.Drawing.Point(72, 712);
-            this.btn_upload.Name = "btn_upload";
-            this.btn_upload.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.btn_upload.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_upload.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btn_upload.OnHoverImage = null;
-            this.btn_upload.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.btn_upload.Radius = 5;
-            this.btn_upload.Size = new System.Drawing.Size(570, 48);
-            this.btn_upload.TabIndex = 21;
-            this.btn_upload.Text = "Choose File";
-            this.btn_upload.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(67, 671);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(503, 30);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Upload an image (Acceptable File types: jpg, png)";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -377,7 +297,7 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.choice_found);
             this.panel1.Controls.Add(this.choice_lost);
-            this.panel1.Location = new System.Drawing.Point(72, 778);
+            this.panel1.Location = new System.Drawing.Point(72, 661);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(570, 102);
             this.panel1.TabIndex = 30;
@@ -406,30 +326,30 @@
             this.choice_lost.TabIndex = 16;
             this.choice_lost.Text = "Lost";
             // 
-            // gunaButton1
+            // btn_cancel
             // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.gunaButton1.BorderSize = 1;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(666, 802);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.gunaButton1.Radius = 5;
-            this.gunaButton1.Size = new System.Drawing.Size(271, 60);
-            this.gunaButton1.TabIndex = 32;
-            this.gunaButton1.Text = "Cancel";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            this.btn_cancel.AnimationHoverSpeed = 0.07F;
+            this.btn_cancel.AnimationSpeed = 0.03F;
+            this.btn_cancel.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_cancel.BorderSize = 1;
+            this.btn_cancel.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.btn_cancel.Image = null;
+            this.btn_cancel.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_cancel.Location = new System.Drawing.Point(666, 802);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_cancel.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_cancel.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_cancel.OnHoverImage = null;
+            this.btn_cancel.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.btn_cancel.Radius = 5;
+            this.btn_cancel.Size = new System.Drawing.Size(271, 60);
+            this.btn_cancel.TabIndex = 32;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // image1
             // 
@@ -442,15 +362,56 @@
             this.image1.TabIndex = 33;
             this.image1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(258, 30);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Reported by (User email)";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.label7);
+            this.flowLayoutPanel1.Controls.Add(this.panel);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(666, 283);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(638, 90);
+            this.flowLayoutPanel1.TabIndex = 28;
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.txt_email);
+            this.panel.Location = new System.Drawing.Point(3, 33);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(404, 50);
+            this.panel.TabIndex = 47;
+            // 
+            // txt_email
+            // 
+            this.txt_email.AutoSize = true;
+            this.txt_email.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_email.ForeColor = System.Drawing.Color.Black;
+            this.txt_email.Location = new System.Drawing.Point(0, 10);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(72, 32);
+            this.txt_email.TabIndex = 7;
+            this.txt_email.Text = "email";
+            // 
             // EditItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 1038);
             this.Controls.Add(this.image1);
-            this.Controls.Add(this.gunaButton1);
+            this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btn_editInfo);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -460,15 +421,11 @@
             this.Controls.Add(this.flowLayoutPanel4);
             this.Controls.Add(this.flowLayoutPanel6);
             this.Controls.Add(this.flowLayoutPanel2);
-            this.Controls.Add(this.btn_upload);
-            this.Controls.Add(this.label6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "EditItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Information";
             this.Load += new System.EventHandler(this.ItemInfo_Load);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel7.PerformLayout();
             this.flowLayoutPanel5.ResumeLayout(false);
@@ -482,8 +439,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.panel.ResumeLayout(false);
+            this.panel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -491,8 +451,6 @@
 
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaButton btn_editInfo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox txt_description;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
@@ -506,16 +464,17 @@
         private Guna.UI.WinForms.GunaTextBox txt_itemname;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private Guna.UI.WinForms.GunaButton btn_upload;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI.WinForms.GunaRadioButton choice_found;
         private Guna.UI.WinForms.GunaRadioButton choice_lost;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton btn_cancel;
         private System.Windows.Forms.DateTimePicker datePicker;
         private System.Windows.Forms.DateTimePicker timePicker;
-        private Guna.UI.WinForms.GunaComboBox typePicker;
         private Guna.UI.WinForms.GunaPictureBox image1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel;
+        private System.Windows.Forms.Label txt_email;
     }
 }

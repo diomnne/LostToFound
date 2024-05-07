@@ -26,6 +26,8 @@ namespace AppDev_Finals
             string lastname = txt_lastname.Text;
             string email = txt_email.Text;
             string password = txt_password.Text;
+            DateTime datejoined = DateTime.Now;
+            int position = 0;
 
             txt_firstname.Text = "";
             txt_lastname.Text = "";
@@ -36,13 +38,15 @@ namespace AppDev_Finals
             MySqlConnection conConn = new MySqlConnection(con);
             conConn.Open();
 
-            string insertSql = "INSERT INTO lost_and_found.user  (firstname, lastname, email, password) VALUES (?, ?, ?, ?)";
+            string insertSql = "INSERT INTO lost_and_found.user  (firstname, lastname, email, password, datejoined, position) VALUES (?, ?, ?, ?, ?, ?)";
             MySqlCommand insertCmd = new MySqlCommand(insertSql, conConn);
 
             insertCmd.Parameters.AddWithValue("@Firstname", firstname);
             insertCmd.Parameters.AddWithValue("@Lastname", lastname);
             insertCmd.Parameters.AddWithValue("@Email", email);
             insertCmd.Parameters.AddWithValue("@Password", password);
+            insertCmd.Parameters.AddWithValue("@DateJoined", datejoined);
+            insertCmd.Parameters.AddWithValue("@Position", position);
 
             insertCmd.ExecuteNonQuery();
 
@@ -79,16 +83,6 @@ namespace AppDev_Finals
             {
                 txt_email.Focus();
             }
-        }
-
-        private void txt_email_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void txt_password_KeyDown(object sender, KeyEventArgs e)
-        {
-
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

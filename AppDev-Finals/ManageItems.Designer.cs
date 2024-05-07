@@ -34,7 +34,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.label1.Location = new System.Drawing.Point(75, 86);
+            this.label1.Location = new System.Drawing.Point(75, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(398, 59);
             this.label1.TabIndex = 2;
@@ -65,7 +65,7 @@
             this.btn_addItem.Image = ((System.Drawing.Image)(resources.GetObject("btn_addItem.Image")));
             this.btn_addItem.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_addItem.ImageSize = new System.Drawing.Size(15, 15);
-            this.btn_addItem.Location = new System.Drawing.Point(75, 997);
+            this.btn_addItem.Location = new System.Drawing.Point(75, 1247);
             this.btn_addItem.Name = "btn_addItem";
             this.btn_addItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(179)))), ((int)(((byte)(175)))));
             this.btn_addItem.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -84,12 +84,12 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(143)))), ((int)(((byte)(140)))));
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(143)))), ((int)(((byte)(140)))));
-            this.panel3.Location = new System.Drawing.Point(75, 191);
+            this.panel3.Location = new System.Drawing.Point(75, 146);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1980, 100);
             this.panel3.TabIndex = 5;
@@ -110,22 +110,22 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(887, 32);
+            this.label13.Location = new System.Drawing.Point(949, 32);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(204, 37);
             this.label13.TabIndex = 5;
             this.label13.Text = "Date and Time";
             // 
-            // label12
+            // label
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(584, 32);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(128, 37);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Location";
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.White;
+            this.label.Location = new System.Drawing.Point(579, 32);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(177, 37);
+            this.label.TabIndex = 4;
+            this.label.Text = "Reported by";
             // 
             // label10
             // 
@@ -164,9 +164,9 @@
             // 
             this.itemsTable.AutoScroll = true;
             this.itemsTable.BackColor = System.Drawing.Color.White;
-            this.itemsTable.Location = new System.Drawing.Point(75, 292);
+            this.itemsTable.Location = new System.Drawing.Point(75, 247);
             this.itemsTable.Name = "itemsTable";
-            this.itemsTable.Size = new System.Drawing.Size(1980, 658);
+            this.itemsTable.Size = new System.Drawing.Size(1980, 959);
             this.itemsTable.TabIndex = 6;
             // 
             // ManageItems
@@ -196,7 +196,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

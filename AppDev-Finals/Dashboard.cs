@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,16 +19,17 @@ namespace AppDev_Finals
 
         public List<Item> items;
         public List<Item> filteredItems;
+        private string filter = null;
         public Dashboard()
         {
             InitializeComponent();
             addTable();
             updateDashboardData();
 
-
+            filter_date.SelectedIndex = 0;
         }
 
-        private void updateDashboardData(string filter = null)
+        public void updateDashboardData(string filter = null, string sortOrder = "DESC")
         {
             items = func.getAllItems();
 
@@ -43,6 +46,19 @@ namespace AppDev_Finals
                 filteredItems = items;
             }
 
+            if (sortOrder == "ASC")
+            {
+                filteredItems = filteredItems.OrderBy(item => item.ItemID).ToList();
+            }
+            else
+            {
+                filteredItems = filteredItems.OrderByDescending(item => item.ItemID).ToList();
+            }
+
+           
+
+
+
             // Update counters based on the filtered list
             AllCtr.Text = items.Count().ToString();
             newLostCtr.Text = filteredItems.Count(item => item.Category == "Lost" && item.DateFound.Date == DateTime.Today).ToString();
@@ -57,6 +73,7 @@ namespace AppDev_Finals
                 itemsTable.Controls.Add(data);
             }
         }
+
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
@@ -83,17 +100,40 @@ namespace AppDev_Finals
 
         private void btn_viewAll_Click(object sender, EventArgs e)
         {
-            updateDashboardData();
+            filter = null;
+            updateDashboardData(filter);
         }
 
         private void btn_viewFound_Click(object sender, EventArgs e)
         {
-            updateDashboardData("FoundToday");
+            filter = "FoundToday";
+            updateDashboardData(filter);
         }
 
         private void btn_viewLost_Click(object sender, EventArgs e)
         {
-            updateDashboardData("LostToday");
+            filter = "LostToday";
+            updateDashboardData(filter);
         }
+
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void filter_date_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedSort = filter_date.SelectedItem.ToString() == "Newest first" ? "DESC" : "ASC";
+            updateDashboardData(filter, selectedSort);
+        }
+
+
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            updateDashboardData();
+        }
+
+        
     }
 }

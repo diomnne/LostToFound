@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,12 +16,15 @@ namespace AppDev_Finals
     {
         Functions functions = new Functions();
         User user;
+        Profile profile;
         string email;
-        public Profile(string email)
+        private Home home;
+        public Profile(string email,Home home)
         {
             InitializeComponent();
 
             this.email = email;
+            this.home = home;
             user = functions.InitializeUser(email);
             lbl_fullname.Text = functions.InitializeUser(email).FirstName + " " + functions.InitializeUser(email).LastName;
             lbl_userID.Text = functions.InitializeUser(email).UserID.ToString();
@@ -41,6 +45,15 @@ namespace AppDev_Finals
             setProfilePic(profilepic, user.ProfilePicture);
         }
 
+        public void updateProfileInfo()
+        { 
+            user = functions.InitializeUser(email);
+            lbl_fullname.Text = user.FirstName + " " + user.LastName;
+            lbl_email.Text = user.Email;
+
+            setProfilePic(profilepic, user.ProfilePicture);
+        }
+
         public void setProfilePic(PictureBox Image_cont, byte[] byteArray)
         {
             if (byteArray != null)
@@ -53,11 +66,6 @@ namespace AppDev_Finals
             }
         }
 
-        private void btn_editprofile_Click(object sender, EventArgs e)
-        {
-            EditProfile ep = new EditProfile();
-        }
-
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -66,6 +74,11 @@ namespace AppDev_Finals
         private void profilepic_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_editprofile_Click_1(object sender, EventArgs e)
+        {
+            EditProfile ep = new EditProfile(user, this, home);
         }
     }
 }

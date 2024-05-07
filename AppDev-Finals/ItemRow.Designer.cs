@@ -34,8 +34,8 @@
             this.status = new Guna.UI.WinForms.GunaLabel();
             this.timefound = new Guna.UI.WinForms.GunaLabel();
             this.datefound = new Guna.UI.WinForms.GunaLabel();
-            this.placefound = new Guna.UI.WinForms.GunaLabel();
-            this.type = new Guna.UI.WinForms.GunaLabel();
+            this.location = new Guna.UI.WinForms.GunaLabel();
+            this.email = new Guna.UI.WinForms.GunaLabel();
             this.itemID = new Guna.UI.WinForms.GunaLabel();
             this.gunaLinePanel1.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +44,7 @@
             // 
             this.category.AutoSize = true;
             this.category.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.category.Location = new System.Drawing.Point(372, 30);
+            this.category.Location = new System.Drawing.Point(411, 32);
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(106, 32);
             this.category.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             this.itemName.AutoSize = true;
             this.itemName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemName.Location = new System.Drawing.Point(103, 30);
+            this.itemName.Location = new System.Drawing.Point(103, 32);
             this.itemName.Name = "itemName";
             this.itemName.Size = new System.Drawing.Size(129, 32);
             this.itemName.TabIndex = 1;
@@ -67,8 +67,8 @@
             this.gunaLinePanel1.Controls.Add(this.status);
             this.gunaLinePanel1.Controls.Add(this.timefound);
             this.gunaLinePanel1.Controls.Add(this.datefound);
-            this.gunaLinePanel1.Controls.Add(this.placefound);
-            this.gunaLinePanel1.Controls.Add(this.type);
+            this.gunaLinePanel1.Controls.Add(this.location);
+            this.gunaLinePanel1.Controls.Add(this.email);
             this.gunaLinePanel1.Controls.Add(this.itemID);
             this.gunaLinePanel1.Controls.Add(this.category);
             this.gunaLinePanel1.Controls.Add(this.itemName);
@@ -86,7 +86,7 @@
             this.status.AutoSize = true;
             this.status.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.status.ForeColor = System.Drawing.Color.White;
-            this.status.Location = new System.Drawing.Point(1576, 32);
+            this.status.Location = new System.Drawing.Point(1682, 32);
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(76, 32);
             this.status.TabIndex = 7;
@@ -96,7 +96,7 @@
             // 
             this.timefound.AutoSize = true;
             this.timefound.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timefound.Location = new System.Drawing.Point(1340, 32);
+            this.timefound.Location = new System.Drawing.Point(1116, 32);
             this.timefound.Name = "timefound";
             this.timefound.Size = new System.Drawing.Size(133, 32);
             this.timefound.TabIndex = 6;
@@ -106,37 +106,37 @@
             // 
             this.datefound.AutoSize = true;
             this.datefound.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datefound.Location = new System.Drawing.Point(1188, 32);
+            this.datefound.Location = new System.Drawing.Point(978, 32);
             this.datefound.Name = "datefound";
             this.datefound.Size = new System.Drawing.Size(132, 32);
             this.datefound.TabIndex = 5;
             this.datefound.Text = "date found";
             // 
-            // placefound
+            // location
             // 
-            this.placefound.AutoSize = true;
-            this.placefound.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placefound.Location = new System.Drawing.Point(839, 32);
-            this.placefound.Name = "placefound";
-            this.placefound.Size = new System.Drawing.Size(141, 32);
-            this.placefound.TabIndex = 4;
-            this.placefound.Text = "place found";
+            this.location.AutoSize = true;
+            this.location.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.location.Location = new System.Drawing.Point(601, 32);
+            this.location.Name = "location";
+            this.location.Size = new System.Drawing.Size(99, 32);
+            this.location.TabIndex = 4;
+            this.location.Text = "location";
             // 
-            // type
+            // email
             // 
-            this.type.AutoSize = true;
-            this.type.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.type.Location = new System.Drawing.Point(564, 32);
-            this.type.Name = "type";
-            this.type.Size = new System.Drawing.Size(61, 32);
-            this.type.TabIndex = 3;
-            this.type.Text = "type";
+            this.email.AutoSize = true;
+            this.email.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.Location = new System.Drawing.Point(1283, 32);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(72, 32);
+            this.email.TabIndex = 3;
+            this.email.Text = "email";
             // 
             // itemID
             // 
             this.itemID.AutoSize = true;
             this.itemID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.itemID.Location = new System.Drawing.Point(23, 30);
+            this.itemID.Location = new System.Drawing.Point(23, 32);
             this.itemID.Name = "itemID";
             this.itemID.Size = new System.Drawing.Size(40, 32);
             this.itemID.TabIndex = 2;
@@ -162,9 +162,9 @@
         private Guna.UI.WinForms.GunaLabel itemName;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
         private Guna.UI.WinForms.GunaLabel itemID;
-        private Guna.UI.WinForms.GunaLabel type;
+        private Guna.UI.WinForms.GunaLabel email;
         private Guna.UI.WinForms.GunaLabel datefound;
-        private Guna.UI.WinForms.GunaLabel placefound;
+        private Guna.UI.WinForms.GunaLabel location;
         private Guna.UI.WinForms.GunaLabel timefound;
         private Guna.UI.WinForms.GunaLabel status;
     }

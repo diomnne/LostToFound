@@ -12,6 +12,7 @@ namespace AppDev_Finals
     {
 
         string connection = "server=127.0.0.1;uid=root;pwd=20181024;database=lost_and_found";
+        
 
         public void submitReport(Item item)
         {
@@ -22,15 +23,14 @@ namespace AppDev_Finals
                     conn.Open();
 
 
-                    string insertSql = @"INSERT INTO lost_and_found.item (ItemName, PlaceFound, Description, Type, Category, DateFound, TimeFound, ClaimStatus, Image) 
-                     VALUES (@ItemName, @PlaceFound, @Description, @Type, @Category, @DateFound, @TimeFound, @ClaimStatus, @Image)";
+                    string insertSql = @"INSERT INTO lost_and_found.item (ItemName, PlaceFound, Description, Category, DateFound, TimeFound, ClaimStatus, Image, ReportedBy) 
+                     VALUES (@ItemName, @PlaceFound, @Description, @Category, @DateFound, @TimeFound, @ClaimStatus, @Image, @ReportedBy)";
 
                     MySqlCommand cmd = new MySqlCommand(insertSql, conn);
 
                     cmd.Parameters.AddWithValue("@ItemName", item.ItemName);
                     cmd.Parameters.AddWithValue("@PlaceFound", item.PlaceFound);
                     cmd.Parameters.AddWithValue("@Description", item.Description);
-                    cmd.Parameters.AddWithValue("@Type", item.Type);
                     cmd.Parameters.AddWithValue("@Category", item.Category);
                     cmd.Parameters.AddWithValue("@DateFound", item.DateFound);
                     cmd.Parameters.AddWithValue("@TimeFound", item.TimeFound);
@@ -45,13 +45,13 @@ namespace AppDev_Finals
                         cmd.Parameters.AddWithValue("@Image", DBNull.Value);
 
                     }
+                    cmd.Parameters.AddWithValue("@ReportedBy", item.ReportedBy);
 
-                    
+
 
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Submitted successfully!");
-
                     
                 }
             }
@@ -87,8 +87,8 @@ namespace AppDev_Finals
                             item.ItemName = reader["ItemName"].ToString();
                             item.PlaceFound = reader["PlaceFound"].ToString();
                             item.Description = reader["Description"].ToString();
-                            item.Type = reader["Type"].ToString();
                             item.Category = reader["Category"].ToString();
+                            item.ReportedBy = reader["ReportedBy"].ToString();
                             item.DateFound = Convert.ToDateTime(reader["DateFound"]);
                             item.TimeFound = Convert.ToDateTime(reader["TimeFound"]);
                             item.ClaimStatus = Convert.ToInt32(reader["ClaimStatus"]);
@@ -111,7 +111,7 @@ namespace AppDev_Finals
         }
 
 
-        public User InitializeUser(string email)
+        public User prevInitializeUser(string email)
         {
             User user = null;  // Consider initializing with default User if needed
             using (MySqlConnection conConn = new MySqlConnection(connection))
@@ -119,16 +119,18 @@ namespace AppDev_Finals
                 conConn.Open();
                 try
                 {
-                    using (MySqlCommand command = new MySqlCommand("SELECT * FROM lost_and_found.user WHERE Email = @Email", conConn))
+                    using (MySqlCommand command = new MySqlCommand("SELECT * FROM lost_and_found.user WHERE email = @Email", conConn))
                     {
-                        command.Parameters.AddWithValue("@Email", email);
+                        command.Parameters.AddWithValue("@Email", email); 
                         using (MySqlDataReader reader = command.ExecuteReader())
                         {
                             if (reader.HasRows)
                             {
                                 while (reader.Read())
                                 {
+                                    
                                     byte[] profilePic = reader["ProfilePicture"] != DBNull.Value ? (byte[])reader["ProfilePicture"] : null;
+                                    MessageBox.Show("Hello world");
                                     user = new User((int)reader["UserID"],
                                                      (string)reader["FirstName"],
                                                      (string)reader["LastName"],
@@ -145,10 +147,92 @@ namespace AppDev_Finals
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Here: " + ex.Message);
                 }
             }
             return user;
+        }
+
+        public User InitializeUser(string email)
+        {
+            //MessageBox.Show(email);
+            User user = null;  // Consider initializing with default User if needed
+            using (MySqlConnection conConn = new MySqlConnection(connection))
+            {
+                conConn.Open();
+                try
+                {
+                    using (MySqlCommand command = new MySqlCommand("SELECT * FROM lost_and_found.user WHERE Email = @Email", conConn))
+                    {
+                        command.Parameters.AddWithValue("@Email", email);
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                while (reader.Read())
+                                {
+                                    //MessageBox.Show("hERE "+ (int)reader["UserID"] + "" + (string)reader["FirstName"] + "" + (string)reader["LastName"] + "" + (string)reader["Email"] + "" + (string)reader["Password"] + "" + (int)reader["Position"] + "" + (DateTime)reader["DateJoined"]);
+
+                                    byte[] profilePic = reader["ProfilePicture"] != DBNull.Value ? (byte[])reader["ProfilePicture"] : null;
+                                    
+                                    user = new User();
+                                user.UserID = reader.GetInt32(0);
+                                user.FirstName = reader["FirstName"].ToString();
+                                user.LastName = reader["LastName"].ToString();
+                                user.Email = reader["Email"].ToString();
+                                user.Password = reader["Password"].ToString();
+                                user.Position = Convert.ToInt32(reader["Position"]);
+                                user.ProfilePicture = profilePic;
+                                user.DateJoined = Convert.ToDateTime(reader["DateJoined"]);
+                                break;  // Exit loop after finding the first user (if duplicates are not expected)
+
+
+                            
+                            }
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Here: " + ex.Message);
+                }
+                
+            }
+            return user;
+        }
+
+
+
+        public void updateUser(User user)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connection))
+                {
+                    conn.Open();
+
+                    // Update statement with WHERE clause to identify the item
+                    string updateSql = "UPDATE lost_and_found.user SET FirstName = @FirstName, LastName = @LastName, Email = @Email WHERE UserID = @UserID;";
+
+                    MySqlCommand cmd = new MySqlCommand(updateSql, conn);
+
+                    // Add parameter for ItemId to identify the record to update
+                    cmd.Parameters.AddWithValue("@FirstName", user.FirstName);
+                    cmd.Parameters.AddWithValue("@LastName", user.LastName);
+                    cmd.Parameters.AddWithValue("@Email", user.Email);
+                    cmd.Parameters.AddWithValue("@UserID", user.UserID);
+
+
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Profile Updated successfully!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         public void updateReport(Item item)
@@ -160,7 +244,7 @@ namespace AppDev_Finals
                     conn.Open();
 
                     // Update statement with WHERE clause to identify the item
-                    string updateSql = "UPDATE lost_and_found.item SET ItemName = @ItemName, PlaceFound = @PlaceFound, Description = @Description, Type = @Type, Category = @Category, DateFound = @DateFound, TimeFound = @TimeFound, ClaimStatus = @ClaimStatus, Image = @Image WHERE ItemID = @ItemID;";
+                    string updateSql = "UPDATE lost_and_found.item SET ItemName = @ItemName, PlaceFound = @PlaceFound, Description = @Description, Category = @Category, DateFound = @DateFound, TimeFound = @TimeFound, ClaimStatus = @ClaimStatus, Image = @Image WHERE ItemID = @ItemID;";
 
                     MySqlCommand cmd = new MySqlCommand(updateSql, conn);
 
@@ -170,7 +254,6 @@ namespace AppDev_Finals
                     cmd.Parameters.AddWithValue("@ItemName", item.ItemName);
                     cmd.Parameters.AddWithValue("@PlaceFound", item.PlaceFound);
                     cmd.Parameters.AddWithValue("@Description", item.Description);
-                    cmd.Parameters.AddWithValue("@Type", item.Type);
                     cmd.Parameters.AddWithValue("@Category", item.Category);
                     cmd.Parameters.AddWithValue("@DateFound", item.DateFound);
                     cmd.Parameters.AddWithValue("@TimeFound", item.TimeFound);
@@ -198,6 +281,7 @@ namespace AppDev_Finals
 
         }
 
+
         public void updateClaimStatus(int itemId, int newClaimStatus)
         {
             using (MySqlConnection conn = new MySqlConnection(connection))
@@ -216,6 +300,39 @@ namespace AppDev_Finals
                 cmd.ExecuteNonQuery();
             }
         }
+
+        public bool changeUserProfile(Byte[] image, int user_id)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connection))
+            {
+                conn.Open();
+                try
+                {
+                    string sql = "UPDATE lost_and_found.user SET ProfilePicture = @ProfilePic WHERE UserID = @user_id;";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@user_id", user_id);
+
+                    if (image != null)
+                    {
+                        cmd.Parameters.AddWithValue("@ProfilePic", image);
+                    }
+                    else
+                    {
+                        MessageBox.Show("hello world");
+                        cmd.Parameters.AddWithValue("@ProfilePic", DBNull.Value);
+                    }
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected == 1; // Check for exactly one row updated
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return false;
+                }
+            }
+        }
+
 
 
 

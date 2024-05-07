@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_editprofile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_updateprofile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAiCSURBVHhe7d1P
+        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAiCSURBVHhe7d1P
         yGV1HcfxcRQNIadFMxQJQRRiEAWBQVGLoIiCKIKKhMFFGFFUuEkiXBS4aVFY0bJo40KQ0igIpLU1LTSq
         RbSQzCIjjNw4OE6f3+334PRMT3P/nXvP735fL/gi6cy95/zOef/ueZ7Gx1MAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAADCoy5cv35J5S+b9mfOZT2bek7ktc0P/ZcChSNi3Zr6SuZB5MXOS5zM/
@@ -161,10 +161,10 @@
         AAAAjOTUqX8DGYbE2o037/IAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_editPfp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_editpfp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAp4SURBVHhe7d1L
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAp4SURBVHhe7d1L
         qK1lHcdxM9A6JlhZ2IVAiDrWIAlq3KAIgmrQpIhoVhCFDpsVQQNrVEQQdBlUFF0GYhiIQwuigVFpdJHo
         qpGDTO2cQLPfu9bz4nafvc9e6zn7sv7P+/nAA9nAs9bL7/u+65zt3ucq4Ow988wzN+S8OOfq9n8BI0nc
         53LenvOZnB/k/DLn8Zz9/pPzu5wf5Xw+5705L2n/GqCKhHtdzgdz7s75b06vp3N+mvPxnBvbvx7YRYn0

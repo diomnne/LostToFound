@@ -46,9 +46,9 @@
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_description = new Guna.UI.WinForms.GunaTextBox();
-            this.typePicker = new Guna.UI.WinForms.GunaComboBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
+            this.txt_reportedBy = new Guna.UI.WinForms.GunaTextBox();
             this.btn_addItem = new Guna.UI.WinForms.GunaButton();
             this.choice_lost = new Guna.UI.WinForms.GunaRadioButton();
             this.label8 = new System.Windows.Forms.Label();
@@ -157,9 +157,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 30);
+            this.label1.Size = new System.Drawing.Size(98, 30);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Place Found";
+            this.label1.Text = "Location";
             // 
             // txt_placefound
             // 
@@ -284,34 +284,10 @@
             this.txt_description.Size = new System.Drawing.Size(550, 86);
             this.txt_description.TabIndex = 8;
             // 
-            // typePicker
-            // 
-            this.typePicker.BackColor = System.Drawing.Color.Transparent;
-            this.typePicker.BaseColor = System.Drawing.Color.White;
-            this.typePicker.BorderColor = System.Drawing.Color.Silver;
-            this.typePicker.BorderSize = 1;
-            this.typePicker.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.typePicker.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.typePicker.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.typePicker.ForeColor = System.Drawing.Color.Black;
-            this.typePicker.FormattingEnabled = true;
-            this.typePicker.Items.AddRange(new object[] {
-            "",
-            "Personal Belongings",
-            "Valuables",
-            "Course-related",
-            "Miscellaneous"});
-            this.typePicker.Location = new System.Drawing.Point(3, 33);
-            this.typePicker.Name = "typePicker";
-            this.typePicker.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.typePicker.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.typePicker.Size = new System.Drawing.Size(446, 44);
-            this.typePicker.TabIndex = 13;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.label7);
-            this.flowLayoutPanel1.Controls.Add(this.typePicker);
+            this.flowLayoutPanel1.Controls.Add(this.txt_reportedBy);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(661, 274);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -325,9 +301,26 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 30);
+            this.label7.Size = new System.Drawing.Size(258, 30);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Item Type";
+            this.label7.Text = "Reported by (User email)";
+            // 
+            // txt_reportedBy
+            // 
+            this.txt_reportedBy.BaseColor = System.Drawing.Color.White;
+            this.txt_reportedBy.BorderColor = System.Drawing.Color.Silver;
+            this.txt_reportedBy.BorderSize = 1;
+            this.txt_reportedBy.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_reportedBy.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_reportedBy.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.txt_reportedBy.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_reportedBy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_reportedBy.Location = new System.Drawing.Point(3, 33);
+            this.txt_reportedBy.Name = "txt_reportedBy";
+            this.txt_reportedBy.PasswordChar = '\0';
+            this.txt_reportedBy.Radius = 5;
+            this.txt_reportedBy.Size = new System.Drawing.Size(550, 50);
+            this.txt_reportedBy.TabIndex = 9;
             // 
             // btn_addItem
             // 
@@ -482,7 +475,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox txt_description;
-        private Guna.UI.WinForms.GunaComboBox typePicker;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaButton btn_addItem;
@@ -492,5 +484,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaPictureBox image1;
+        private Guna.UI.WinForms.GunaTextBox txt_reportedBy;
     }
 }

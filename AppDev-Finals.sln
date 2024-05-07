@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDev-Finals", "AppDev-Finals\AppDev-Finals.csproj", "{B2D08B94-C879-4951-B12F-B65F2DE2B4D2}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Lost2Found", "Lost2Found\Lost2Found.vdproj", "{5229590F-9330-4AAB-B5CB-AA00E4A8EB61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{B2D08B94-C879-4951-B12F-B65F2DE2B4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2D08B94-C879-4951-B12F-B65F2DE2B4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2D08B94-C879-4951-B12F-B65F2DE2B4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5229590F-9330-4AAB-B5CB-AA00E4A8EB61}.Debug|Any CPU.ActiveCfg = Debug
+		{5229590F-9330-4AAB-B5CB-AA00E4A8EB61}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

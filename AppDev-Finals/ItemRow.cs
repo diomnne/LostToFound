@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Ocsp;
+﻿using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Ocsp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace AppDev_Finals
     public partial class ItemRow : UserControl
     {
         Item item;
+        User user;
         public ItemRow(Item item)
         {
             InitializeComponent();
@@ -22,24 +24,27 @@ namespace AppDev_Finals
             itemID.Text = item.ItemID.ToString();
             itemName.Text = item.ItemName;
             category.Text = item.Category;
-            type.Text = item.Type;
-            placefound.Text = item.PlaceFound;
-            datefound.Text = item.DateFound.ToString("MM-dd-yyyy");
-            timefound.Text = item.TimeFound.ToString("hh:mm tt"); 
+            email.Text = item.ReportedBy;
+            location.Text = item.PlaceFound;
+            datefound.Text = item.DateFound.ToString("MM-dd-yyyy") + ",";
+            timefound.Text = item.TimeFound.ToString("hh:mm tt");
 
-            if(item.ClaimStatus == 1)
+            itemName.AutoEllipsis = true;
+            location.AutoEllipsis = true;
+
+            if (item.ClaimStatus == 1)
             {
-                status.Text = "Returned/Claimed";
+                status.Text = "Claimed/Returned";
                 status.BackColor = Color.FromArgb(75, 143, 120); //red = 196, 94, 94 green = 75, 143, 120
             }
             else
             {
-                status.Text = "Unclaimed";
+                status.Text = "Unclaimed/Missing";
                 status.BackColor = Color.FromArgb(196, 94, 94);
             }
         }
 
-       
+
 
         private void status_Click(object sender, EventArgs e)
         {

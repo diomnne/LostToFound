@@ -20,6 +20,7 @@ namespace AppDev_Finals
     {
 
         Functions functions = new Functions();
+        Dashboard dashboard = new Dashboard();
         public Report()
         {
             InitializeComponent();
@@ -57,42 +58,64 @@ namespace AppDev_Finals
             }
         }
 
-        private void datePicker_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
         private void btn_addItem_Click(object sender, EventArgs e)
         {
-            string connection = "server=127.0.0.1;uid=root;pwd=20181024;database=lost_and_found";
+
             int itemID = 0;
             string itemName = txt_itemname.Text;
-            string placeFound = txt_placefound.Text; 
+            string placeFound = txt_placefound.Text;
             string description = txt_description.Text;
-            string type = typePicker.SelectedItem.ToString();
             string category = (choice_lost.Checked) ? "Lost" : "Found";
             DateTime dateFound = datePicker.Value;
             DateTime timeFound = timePicker.Value;
             int claimStatus = 0;
             byte[] image = getPhoto();
+            string reportedBy = txt_reportedBy.Text;
 
-            Item item = new Item(itemID, itemName, category, type, placeFound, dateFound, timeFound, description, claimStatus, image);
+            bool flag = false;
+            if (choice_found.Checked || choice_lost.Checked)
+            {
+                flag = true;
+            }
 
-            functions.submitReport(item);
+            if (itemName != "" && placeFound != "" && flag && dateFound != null && timeFound != null && reportedBy != "")
+            {
+                Item item = new Item(itemID, itemName, category, placeFound, dateFound, timeFound, description, claimStatus, image, reportedBy);
 
-            MessageBox.Show("Lost/Found item report submitted successfully!");
+                functions.submitReport(item);
 
-            // Clear input fields for new report
-            txt_itemname.Text = "";
-            txt_placefound.Text = "";
-            txt_description.Text = "";
-            typePicker.SelectedIndex = 0;
-            choice_lost.Checked = false;
-            datePicker.Value = DateTime.Now;
-            timePicker.Value = DateTime.Now;
+                // Clear input fields for new report
+                txt_itemname.Text = "";
+                txt_placefound.Text = "";
+                txt_description.Text = "";
+                choice_lost.Checked = false;
+                datePicker.Value = DateTime.Now;
+                timePicker.Value = DateTime.Now;
 
-            this.Close();
+                this.Close();
+                dashboard.updateDashboardData();
+                dashboard.addTable();
+            }
+            else
+            {
+                if (itemName == "")
+                {
+                    MessageBox.Show("Item name cannot be blank");
+                }
+                else if (placeFound == "")
+                {
+                    MessageBox.Show("Location cannot be blank");
+                }
+                else if (!flag)
+                {
+                    MessageBox.Show("Please select a category");
+                }
+                else if (reportedBy == "")
+                {
+                    MessageBox.Show("Please enter your email");
+                }
 
+            }
         }
 
         private byte[] getPhoto()

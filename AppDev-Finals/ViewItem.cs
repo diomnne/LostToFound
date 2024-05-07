@@ -17,21 +17,12 @@ namespace AppDev_Finals
         {
             InitializeComponent();
             this.Show();
-            txt_itemname.Text = item.ItemName;
-            txt_placefound.Text = item.PlaceFound;
-            txt_itemtype.Text = item.Type;
-            txt_datefound.Text = item.DateFound.ToString();
-            txt_timefound.Text = item.TimeFound.ToString();
-            txt_description.Text = item.Description;
-
-            if (item.Category == "Lost")
-            {
-                choice_lost.Checked = true;
-            }
-            else if (item.Category == "Found")
-            {
-                choice_found.Checked = true;
-            }
+            itemname.Text = item.ItemName;
+            category.Text = item.Category;
+            placefound.Text = item.PlaceFound;
+            date.Text = item.DateFound.ToString("MMMM dd, yyyy");
+            time.Text = item.TimeFound.ToString("hh:mm tt");
+            description.Text = item.Description;
 
             SetImageFromByteArray1(image1, item.Image);
 
@@ -54,6 +45,14 @@ namespace AppDev_Finals
                     Image_cont.Image = image;
                 }
             }
+        }
+
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+
+
         }
     }
 }

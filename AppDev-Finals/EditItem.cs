@@ -17,8 +17,11 @@ namespace AppDev_Finals
         Functions f = new Functions();
         private int ItemID;
         ManageItems manage;
+        private User user;
+        private Item item;
         public EditItem(Item item, ManageItems mg)
         {
+            this.item = item;
             InitializeComponent();
             this.Show();
             this.ItemID = item.ItemID;
@@ -26,7 +29,7 @@ namespace AppDev_Finals
 
             txt_itemname.Text = item.ItemName;
             txt_placefound.Text = item.PlaceFound;
-            typePicker.Text = item.Type;
+            txt_email.Text = item.ReportedBy;
             datePicker.Value = item.DateFound;
             timePicker.Value = item.TimeFound;
             txt_description.Text = item.Description;
@@ -43,11 +46,6 @@ namespace AppDev_Finals
             SetImageFromByteArray1(image1, item.Image);
             
             
-
-        }
-
-        private void gunaButton1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -74,14 +72,15 @@ namespace AppDev_Finals
             string itemName = txt_itemname.Text;
             string placeFound = txt_placefound.Text;
             string description = txt_description.Text;
-            string type = typePicker.SelectedItem.ToString();
             string category = (choice_lost.Checked) ? "Lost" : "Found";
             DateTime dateFound = datePicker.Value;
             DateTime timeFound = timePicker.Value;
             int claimStatus = 0;
-            byte[] image = getPhoto();
+            byte[] image = this.item.Image;
+            string email = txt_email.Text;
+            
 
-            Item item = new Item(itemID, itemName, category, type, placeFound, dateFound, timeFound, description, claimStatus, image);
+            Item item = new Item(itemID, itemName, category, placeFound, dateFound, timeFound, description, claimStatus, image, email);
             f.updateReport(item);
 
             manage.addTable();
@@ -97,6 +96,11 @@ namespace AppDev_Finals
             }
 
             return stream.GetBuffer();
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

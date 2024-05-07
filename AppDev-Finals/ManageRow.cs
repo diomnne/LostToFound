@@ -26,8 +26,8 @@ namespace AppDev_Finals
             itemID.Text = item.ItemID.ToString();
             itemName.Text = item.ItemName;
             category.Text = item.Category;
-            placefound.Text = item.PlaceFound;
-            datefound.Text = item.DateFound.ToString("MM-dd-yyyy");
+            reportedBy.Text = item.ReportedBy;
+            datefound.Text = item.DateFound.ToString("MM-dd-yyyy") + ",";
             timefound.Text = item.TimeFound.ToString("hh:mm tt");
 
             if(item.ClaimStatus == 1)

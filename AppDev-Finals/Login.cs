@@ -47,7 +47,7 @@ namespace AppDev_Finals
             if (string.IsNullOrEmpty(password))
             {
                 txt_password.BorderColor = Color.FromArgb(173, 21, 21);
-                MessageBox.Show("Incorrect password");
+                MessageBox.Show("Password is a required field");
 
                 txt_password.BorderColor = SystemColors.WindowFrame;
                 return; 
@@ -70,7 +70,7 @@ namespace AppDev_Finals
             }
             else
             {
-                MessageBox.Show("Account does not exist");
+                MessageBox.Show("Invalid Login credentials");
             }
 
             reader.Close();

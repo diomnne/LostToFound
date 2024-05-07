@@ -1,8 +1,10 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Deployment.Application;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -21,18 +23,27 @@ namespace AppDev_Finals
         {
             InitializeComponent(); 
             this.email = email;
+            
             user = functions.InitializeUser(email);
-            firstname.Text = functions.InitializeUser(email).FirstName;
-            lastname.Text = functions.InitializeUser(email).LastName;
-
+            
+                firstname.Text = user.FirstName;
+                lastname.Text = user.LastName;
+            
             SetImageFromByteArray1(profilepic, user.ProfilePicture);
 
 
         }
 
+        public void updateInfo()
+        {
+            user = functions.InitializeUser(email);
+            firstname.Text = user.FirstName;
+            lastname.Text = user.LastName;
 
+            SetImageFromByteArray1(profilepic, user.ProfilePicture);
+        }
 
-        public void SetImageFromByteArray1(PictureBox Image_cont, byte[] byteArray)
+        public void SetImageFromByteArray1(GunaCirclePictureBox Image_cont, byte[] byteArray)
         {
             if (byteArray != null)
             {
@@ -146,23 +157,20 @@ namespace AppDev_Finals
         private void btn_logout_Click(object sender, EventArgs e)
         {
             Login l = new Login();
-
-            if (MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                l.Show();
-                this.Hide();
-            }
+            l.Show();
+            this.Hide();
         }
 
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
             loadForm(new Dashboard());
-            
+ 
+
         }
 
         private void btn_profile_Click(object sender, EventArgs e)
         {
-            loadForm(new Profile(email));
+            loadForm(new Profile(email,this));
         }
 
         private void btn_manage_Click(object sender, EventArgs e)
@@ -187,7 +195,7 @@ namespace AppDev_Finals
 
         private void profilepic_Click(object sender, EventArgs e)
         {
-            loadForm(new Profile(email));
+            loadForm(new Profile(email,this));
         }
 
         private void btn_addNewItem_Click(object sender, EventArgs e)

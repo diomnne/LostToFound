@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageRow));
             this.timefound = new Guna.UI.WinForms.GunaLabel();
             this.datefound = new Guna.UI.WinForms.GunaLabel();
-            this.placefound = new Guna.UI.WinForms.GunaLabel();
+            this.reportedBy = new Guna.UI.WinForms.GunaLabel();
             this.itemID = new Guna.UI.WinForms.GunaLabel();
             this.category = new Guna.UI.WinForms.GunaLabel();
             this.itemName = new Guna.UI.WinForms.GunaLabel();
@@ -46,7 +46,7 @@
             // 
             this.timefound.AutoSize = true;
             this.timefound.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timefound.Location = new System.Drawing.Point(1035, 32);
+            this.timefound.Location = new System.Drawing.Point(1081, 32);
             this.timefound.Name = "timefound";
             this.timefound.Size = new System.Drawing.Size(133, 32);
             this.timefound.TabIndex = 13;
@@ -56,21 +56,21 @@
             // 
             this.datefound.AutoSize = true;
             this.datefound.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datefound.Location = new System.Drawing.Point(883, 32);
+            this.datefound.Location = new System.Drawing.Point(943, 32);
             this.datefound.Name = "datefound";
             this.datefound.Size = new System.Drawing.Size(132, 32);
             this.datefound.TabIndex = 12;
             this.datefound.Text = "date found";
             // 
-            // placefound
+            // reportedBy
             // 
-            this.placefound.AutoSize = true;
-            this.placefound.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.placefound.Location = new System.Drawing.Point(579, 32);
-            this.placefound.Name = "placefound";
-            this.placefound.Size = new System.Drawing.Size(141, 32);
-            this.placefound.TabIndex = 11;
-            this.placefound.Text = "place found";
+            this.reportedBy.AutoSize = true;
+            this.reportedBy.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportedBy.Location = new System.Drawing.Point(579, 32);
+            this.reportedBy.Name = "reportedBy";
+            this.reportedBy.Size = new System.Drawing.Size(139, 32);
+            this.reportedBy.TabIndex = 11;
+            this.reportedBy.Text = "reported by";
             // 
             // itemID
             // 
@@ -159,7 +159,7 @@
             this.gunaLinePanel1.Controls.Add(this.itemID);
             this.gunaLinePanel1.Controls.Add(this.timefound);
             this.gunaLinePanel1.Controls.Add(this.datefound);
-            this.gunaLinePanel1.Controls.Add(this.placefound);
+            this.gunaLinePanel1.Controls.Add(this.reportedBy);
             this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaLinePanel1.LineColor = System.Drawing.Color.Black;
             this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
@@ -209,7 +209,7 @@
 
         private Guna.UI.WinForms.GunaLabel timefound;
         private Guna.UI.WinForms.GunaLabel datefound;
-        private Guna.UI.WinForms.GunaLabel placefound;
+        private Guna.UI.WinForms.GunaLabel reportedBy;
         private Guna.UI.WinForms.GunaLabel itemID;
         private Guna.UI.WinForms.GunaLabel category;
         private Guna.UI.WinForms.GunaLabel itemName;

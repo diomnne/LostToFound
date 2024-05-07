@@ -55,6 +55,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.filter_date = new Guna.UI.WinForms.GunaComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipsePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.gunaElipsePanel2.SuspendLayout();
@@ -142,9 +145,9 @@
             // 
             this.itemsTable.AutoScroll = true;
             this.itemsTable.BackColor = System.Drawing.Color.White;
-            this.itemsTable.Location = new System.Drawing.Point(75, 736);
+            this.itemsTable.Location = new System.Drawing.Point(75, 735);
             this.itemsTable.Name = "itemsTable";
-            this.itemsTable.Size = new System.Drawing.Size(1980, 638);
+            this.itemsTable.Size = new System.Drawing.Size(1980, 616);
             this.itemsTable.TabIndex = 4;
             // 
             // label1
@@ -153,7 +156,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
-            this.label1.Location = new System.Drawing.Point(75, 86);
+            this.label1.Location = new System.Drawing.Point(75, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(391, 59);
             this.label1.TabIndex = 0;
@@ -311,7 +314,7 @@
             this.panel1.Controls.Add(this.gunaElipsePanel1);
             this.panel1.Controls.Add(this.gunaElipsePanel3);
             this.panel1.Controls.Add(this.gunaElipsePanel2);
-            this.panel1.Location = new System.Drawing.Point(75, 191);
+            this.panel1.Location = new System.Drawing.Point(75, 146);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1980, 323);
             this.panel1.TabIndex = 7;
@@ -327,7 +330,7 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(143)))), ((int)(((byte)(140)))));
-            this.panel3.Location = new System.Drawing.Point(75, 636);
+            this.panel3.Location = new System.Drawing.Point(75, 635);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1980, 100);
             this.panel3.TabIndex = 8;
@@ -337,7 +340,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(837, 32);
+            this.label4.Location = new System.Drawing.Point(600, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(128, 37);
             this.label4.TabIndex = 7;
@@ -348,7 +351,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(1568, 32);
+            this.label14.Location = new System.Drawing.Point(1677, 30);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(96, 37);
             this.label14.TabIndex = 6;
@@ -359,7 +362,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(1186, 32);
+            this.label13.Location = new System.Drawing.Point(975, 30);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(204, 37);
             this.label13.TabIndex = 5;
@@ -370,11 +373,11 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(565, 32);
+            this.label12.Location = new System.Drawing.Point(1284, 30);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(79, 37);
+            this.label12.Size = new System.Drawing.Size(177, 37);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Type";
+            this.label12.Text = "Reported by";
             // 
             // label10
             // 
@@ -392,7 +395,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(369, 30);
+            this.label7.Location = new System.Drawing.Point(413, 30);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 37);
             this.label7.TabIndex = 1;
@@ -409,16 +412,76 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Item Name";
             // 
+            // filter_date
+            // 
+            this.filter_date.BackColor = System.Drawing.Color.Transparent;
+            this.filter_date.BaseColor = System.Drawing.Color.White;
+            this.filter_date.BorderColor = System.Drawing.Color.White;
+            this.filter_date.BorderSize = 0;
+            this.filter_date.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.filter_date.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.filter_date.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.filter_date.ForeColor = System.Drawing.Color.Black;
+            this.filter_date.FormattingEnabled = true;
+            this.filter_date.Items.AddRange(new object[] {
+            "Newest first",
+            "Oldest first"});
+            this.filter_date.Location = new System.Drawing.Point(274, 558);
+            this.filter_date.Name = "filter_date";
+            this.filter_date.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(143)))), ((int)(((byte)(140)))));
+            this.filter_date.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.filter_date.Size = new System.Drawing.Size(351, 44);
+            this.filter_date.TabIndex = 9;
+            this.filter_date.SelectedIndexChanged += new System.EventHandler(this.filter_date_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DimGray;
+            this.label8.Location = new System.Drawing.Point(127, 558);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(141, 32);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Date added";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(78)))), ((int)(((byte)(71)))));
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(15, 15);
+            this.gunaButton1.Location = new System.Drawing.Point(62, 511);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.Radius = 5;
+            this.gunaButton1.Size = new System.Drawing.Size(258, 42);
+            this.gunaButton1.TabIndex = 5;
+            this.gunaButton1.Text = "Filter by:";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(2467, 1480);
+            this.Controls.Add(this.gunaButton1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.filter_date);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.itemsTable);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
             this.Text = "Dashboard";
@@ -467,5 +530,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        private Guna.UI.WinForms.GunaComboBox filter_date;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
     }
 }

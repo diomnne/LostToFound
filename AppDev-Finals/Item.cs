@@ -21,21 +21,21 @@ namespace AppDev_Finals
 
         public byte[] Image { get; set; }
 
-        //public int ReportedBy { get; set; } 
+        public string ReportedBy { get; set; } 
         
 
-        public Item(int itemID, string itemName, string category, string type, string placeFound, DateTime dateFound, DateTime timeFound, string description, int claimStatus, byte[] image)
+        public Item(int itemID, string itemName, string category, string placeFound, DateTime dateFound, DateTime timeFound, string description, int claimStatus, byte[] image, string reportedBy)
         {
             ItemID = itemID;
             ItemName = itemName;
             Category = category;
-            Type = type;
             PlaceFound = placeFound;
             DateFound = dateFound;
             TimeFound = timeFound;
             Description = description;
             ClaimStatus = claimStatus;
             this.Image = image; 
+            ReportedBy = reportedBy;
         }
 
         public Item() { }   

@@ -161,7 +161,7 @@
             this.lastname.BackColor = System.Drawing.Color.Transparent;
             this.lastname.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastname.ForeColor = System.Drawing.Color.White;
-            this.lastname.Location = new System.Drawing.Point(137, 357);
+            this.lastname.Location = new System.Drawing.Point(108, 357);
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(134, 37);
             this.lastname.TabIndex = 3;
