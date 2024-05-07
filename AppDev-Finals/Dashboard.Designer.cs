@@ -455,7 +455,7 @@
             this.gunaButton1.Radius = 5;
             this.gunaButton1.Size = new System.Drawing.Size(258, 42);
             this.gunaButton1.TabIndex = 5;
-            this.gunaButton1.Text = "Filter by:";
+            this.gunaButton1.Text = "Sort by:";
             // 
             // label9
             // 
