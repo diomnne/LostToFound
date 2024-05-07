@@ -91,8 +91,7 @@ namespace AppDev_Finals
                 txt_placefound.Text = "";
                 txt_description.Text = "";
                 choice_lost.Checked = false;
-                datePicker.Value = DateTime.Now;
-                timePicker.Value = DateTime.Now;
+                
 
                 this.Close();
                 dashboard.updateDashboardData();
@@ -128,5 +127,6 @@ namespace AppDev_Finals
         {
 
         }
+
     }
 }

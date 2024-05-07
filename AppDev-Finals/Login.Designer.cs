@@ -170,7 +170,6 @@
             this.txt_password.Radius = 5;
             this.txt_password.Size = new System.Drawing.Size(534, 65);
             this.txt_password.TabIndex = 6;
-            this.txt_password.Text = "20181024";
             // 
             // panel6
             // 
@@ -287,7 +286,7 @@
             this.txt_email.Radius = 5;
             this.txt_email.Size = new System.Drawing.Size(534, 65);
             this.txt_email.TabIndex = 5;
-            this.txt_email.Text = "admin@gmail.com";
+            this.txt_email.Text = "@vsu.edu.ph";
             // 
             // panel3
             // 
