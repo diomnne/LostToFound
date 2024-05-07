@@ -55,5 +55,17 @@ namespace AppDev_Finals
         {
 
         }
+
+
+        private void itemName_Click(object sender, EventArgs e)
+        {
+            ViewItem view = new ViewItem(item);
+        }
+
+        private void itemID_Click(object sender, EventArgs e)
+        {
+            ViewItem view = new ViewItem(item);
+        }
+
     }
 }

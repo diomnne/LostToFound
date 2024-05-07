@@ -42,11 +42,14 @@
             this.txt_firstname = new Guna.UI.WinForms.GunaTextBox();
             this.profilepic = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.btn_editpfp = new Guna.UI.WinForms.GunaCircleButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_cancel = new Guna.UI.WinForms.GunaButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilepic)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_updateprofile
@@ -61,7 +64,7 @@
             this.btn_updateprofile.Image = ((System.Drawing.Image)(resources.GetObject("btn_updateprofile.Image")));
             this.btn_updateprofile.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_updateprofile.ImageSize = new System.Drawing.Size(8, 8);
-            this.btn_updateprofile.Location = new System.Drawing.Point(3, 333);
+            this.btn_updateprofile.Location = new System.Drawing.Point(280, 12);
             this.btn_updateprofile.Name = "btn_updateprofile";
             this.btn_updateprofile.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.btn_updateprofile.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -69,7 +72,7 @@
             this.btn_updateprofile.OnHoverImage = null;
             this.btn_updateprofile.OnPressedColor = System.Drawing.Color.Black;
             this.btn_updateprofile.Radius = 5;
-            this.btn_updateprofile.Size = new System.Drawing.Size(514, 55);
+            this.btn_updateprofile.Size = new System.Drawing.Size(237, 55);
             this.btn_updateprofile.TabIndex = 11;
             this.btn_updateprofile.Text = "Save Changes";
             this.btn_updateprofile.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -80,7 +83,7 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_updateprofile, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel3, 0, 0);
@@ -246,13 +249,50 @@
             this.btn_editpfp.TabIndex = 12;
             this.btn_editpfp.Click += new System.EventHandler(this.btn_editpfp_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_cancel);
+            this.panel1.Controls.Add(this.btn_updateprofile);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 333);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(528, 104);
+            this.panel1.TabIndex = 13;
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.AnimationHoverSpeed = 0.07F;
+            this.btn_cancel.AnimationSpeed = 0.03F;
+            this.btn_cancel.BackColor = System.Drawing.Color.White;
+            this.btn_cancel.BaseColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.BorderColor = System.Drawing.Color.Gray;
+            this.btn_cancel.BorderSize = 1;
+            this.btn_cancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
+            this.btn_cancel.Image = null;
+            this.btn_cancel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_cancel.ImageSize = new System.Drawing.Size(8, 8);
+            this.btn_cancel.Location = new System.Drawing.Point(2, 12);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.btn_cancel.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.btn_cancel.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_cancel.OnHoverImage = null;
+            this.btn_cancel.OnPressedColor = System.Drawing.Color.Transparent;
+            this.btn_cancel.Radius = 5;
+            this.btn_cancel.Size = new System.Drawing.Size(237, 55);
+            this.btn_cancel.TabIndex = 12;
+            this.btn_cancel.Text = "Cancel";
+            this.btn_cancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(718, 758);
+            this.ClientSize = new System.Drawing.Size(718, 869);
             this.Controls.Add(this.btn_editpfp);
             this.Controls.Add(this.profilepic);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -269,6 +309,7 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilepic)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -288,5 +329,7 @@
         private Guna.UI.WinForms.GunaTextBox txt_email;
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaCircleButton btn_editpfp;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI.WinForms.GunaButton btn_cancel;
     }
 }

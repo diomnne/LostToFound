@@ -52,10 +52,6 @@
             this.choice_lost = new Guna.UI.WinForms.GunaRadioButton();
             this.btn_cancel = new Guna.UI.WinForms.GunaButton();
             this.image1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel = new System.Windows.Forms.Panel();
-            this.txt_email = new System.Windows.Forms.Label();
             this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
@@ -63,8 +59,6 @@
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -85,7 +79,7 @@
             this.btn_editInfo.ForeColor = System.Drawing.Color.White;
             this.btn_editInfo.Image = null;
             this.btn_editInfo.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_editInfo.Location = new System.Drawing.Point(960, 802);
+            this.btn_editInfo.Location = new System.Drawing.Point(960, 710);
             this.btn_editInfo.Name = "btn_editInfo";
             this.btn_editInfo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
             this.btn_editInfo.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
@@ -133,7 +127,7 @@
             this.flowLayoutPanel7.Controls.Add(this.label5);
             this.flowLayoutPanel7.Controls.Add(this.txt_description);
             this.flowLayoutPanel7.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(666, 575);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(666, 479);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(638, 196);
             this.flowLayoutPanel7.TabIndex = 27;
@@ -165,7 +159,7 @@
             this.flowLayoutPanel5.Controls.Add(this.label3);
             this.flowLayoutPanel5.Controls.Add(this.datePicker);
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(666, 379);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(666, 283);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(638, 90);
             this.flowLayoutPanel5.TabIndex = 25;
@@ -252,7 +246,7 @@
             this.flowLayoutPanel6.Controls.Add(this.label4);
             this.flowLayoutPanel6.Controls.Add(this.timePicker);
             this.flowLayoutPanel6.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(666, 475);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(666, 379);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(638, 90);
             this.flowLayoutPanel6.TabIndex = 26;
@@ -337,7 +331,7 @@
             this.btn_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(69)))), ((int)(((byte)(78)))));
             this.btn_cancel.Image = null;
             this.btn_cancel.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_cancel.Location = new System.Drawing.Point(666, 802);
+            this.btn_cancel.Location = new System.Drawing.Point(666, 710);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.btn_cancel.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
@@ -362,46 +356,6 @@
             this.image1.TabIndex = 33;
             this.image1.TabStop = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 30);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Reported by:";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.label7);
-            this.flowLayoutPanel1.Controls.Add(this.panel);
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(666, 283);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(638, 90);
-            this.flowLayoutPanel1.TabIndex = 28;
-            // 
-            // panel
-            // 
-            this.panel.Controls.Add(this.txt_email);
-            this.panel.Location = new System.Drawing.Point(3, 33);
-            this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(404, 50);
-            this.panel.TabIndex = 47;
-            // 
-            // txt_email
-            // 
-            this.txt_email.AutoSize = true;
-            this.txt_email.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_email.ForeColor = System.Drawing.Color.Black;
-            this.txt_email.Location = new System.Drawing.Point(0, 10);
-            this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(72, 32);
-            this.txt_email.TabIndex = 7;
-            this.txt_email.Text = "email";
-            // 
             // EditItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -414,7 +368,6 @@
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btn_editInfo);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel7);
             this.Controls.Add(this.flowLayoutPanel5);
@@ -439,10 +392,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.panel.ResumeLayout(false);
-            this.panel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -472,9 +421,5 @@
         private System.Windows.Forms.DateTimePicker datePicker;
         private System.Windows.Forms.DateTimePicker timePicker;
         private Guna.UI.WinForms.GunaPictureBox image1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.Label txt_email;
     }
 }

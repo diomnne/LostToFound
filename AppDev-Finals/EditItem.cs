@@ -16,6 +16,7 @@ namespace AppDev_Finals
     {
         Functions f = new Functions();
         private int ItemID;
+        private string ReportedBy;
         ManageItems manage;
         private User user;
         private Item item;
@@ -25,11 +26,12 @@ namespace AppDev_Finals
             InitializeComponent();
             this.Show();
             this.ItemID = item.ItemID;
+            this.ReportedBy = item.ReportedBy;
             this.manage = mg;
 
             txt_itemname.Text = item.ItemName;
             txt_placefound.Text = item.PlaceFound;
-            txt_email.Text = item.ReportedBy;
+            //txt_email.Text = item.ReportedBy;
             datePicker.Value = item.DateFound;
             timePicker.Value = item.TimeFound;
             txt_description.Text = item.Description;
@@ -77,7 +79,7 @@ namespace AppDev_Finals
             DateTime timeFound = timePicker.Value;
             int claimStatus = 0;
             byte[] image = this.item.Image;
-            string email = txt_email.Text;
+            string email = ReportedBy;
             
 
             Item item = new Item(itemID, itemName, category, placeFound, dateFound, timeFound, description, claimStatus, image, email);

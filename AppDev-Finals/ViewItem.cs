@@ -17,6 +17,8 @@ namespace AppDev_Finals
         {
             InitializeComponent();
             this.Show();
+            itemID.Text = item.ItemID.ToString();
+            reportedby.Text = item.ReportedBy;
             itemname.Text = item.ItemName;
             category.Text = item.Category;
             placefound.Text = item.PlaceFound;

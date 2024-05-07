@@ -60,6 +60,8 @@ namespace AppDev_Finals
 
         private void btn_addItem_Click(object sender, EventArgs e)
         {
+            datePicker.MaxDate = DateTime.Now;
+            timePicker.MaxDate = DateTime.Now;
 
             int itemID = 0;
             string itemName = txt_itemname.Text;
