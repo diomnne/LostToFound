@@ -147,7 +147,7 @@
             this.itemsTable.BackColor = System.Drawing.Color.White;
             this.itemsTable.Location = new System.Drawing.Point(75, 735);
             this.itemsTable.Name = "itemsTable";
-            this.itemsTable.Size = new System.Drawing.Size(1980, 616);
+            this.itemsTable.Size = new System.Drawing.Size(1980, 611);
             this.itemsTable.TabIndex = 4;
             // 
             // label1

@@ -21,6 +21,7 @@ namespace AppDev_Finals
         string email;
         public Home(string email)
         {
+            this.user = user;
             InitializeComponent(); 
             this.email = email;
             
